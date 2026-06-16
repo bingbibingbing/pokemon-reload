@@ -1,0 +1,28 @@
+artifacts/
+data/partidas/
+__pycache__/
+*.pyc
+*.obj
+*.tlog
+*.pdb
+*.lastbuildstate
+*.log
+desktop.ini
+~$*.rtf
+
+data/pkmnbattle/_PROBANDO SPRITES.exe
+Proyecto Reloaded The Last Beta 1.9.1 Full.dialog-zh-test.exe
+Proyecto Reloaded The Last Beta 1.9.1 Full.menu-dialog-zh-test.exe
+Proyecto Reloaded The Last Beta 1.9.1 Full.menu-dialog-zh-test.fix1.exe
+Proyecto Reloaded The Last Beta 1.9.1 Full.menu-encoding-test.exe
+Proyecto Reloaded The Last Beta 1.9.1 Full.menu-pkmn-test.exe
+Proyecto Reloaded The Last Beta 1.9.1 Full.menu-sprite-test.exe
+Proyecto Reloaded The Last Beta 1.9.1 Full.menu-sprite-test2.exe
+Proyecto Reloaded The Last Beta 1.9.1 Full.zh-static-v1.exe
+Proyecto Reloaded The Last Beta 1.9.1 Full.zh-static-v2-startselect.exe
+Proyecto Reloaded The Last Beta 1.9.1 Full.zh-static-v3-startup-ui.exe
+Proyecto Reloaded The Last Beta 1.9.1 Full.zh-static-v4-startup-ui-fix.exe
+Proyecto Reloaded The Last Beta 1.9.1 Full.zh-static-v5-placeholder-sharp.exe
+Proyecto Reloaded The Last Beta 1.9.1 Full.zh-static-v6-page-dialog.exe
+Proyecto Reloaded The Last Beta 1.9.1 Full.zh-static-v7-page-dialog-basekey.exe
+Proyecto Reloaded The Last Beta 1.9.1 Full.zh-static-v8-ui-dex.exe

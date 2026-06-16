@@ -1,0 +1,118 @@
+MO1 Corte
+MO2 Vuelo
+MO3 Surf
+MO4 Fuerza
+MO5 Destello
+MO6 Golpe Roca
+MO7 Buceo
+
+MT1 Teletransporte
+MT2 Puño Dinamico
+MT3 Garra Dragón
+MT4 Velo Sagrado
+MT5 Sustituto
+MT6 Tóxico
+MT7 Bomba Lodo
+MT8 Cola Férrea
+MT9 Torm. Arena
+MT10 Día Soleado
+MT11 Danza Lluvia
+MT12 Granizo
+MT13 Poder Oculto
+MT14 Doble Equipo
+MT15 Hiperrayo
+MT16 Excavar
+MT17 Terremoto
+MT18 Protección
+MT19 Onda Voltio
+MT20 Onda Certera
+MT21 Golpe Aéreo
+MT22 Viento Plata
+MT23 Pulso Dragón
+MT24 Onda Trueno
+MT25 Rayo
+MT26 Trueno
+MT27 Rayo Hielo
+MT28 Ventisca
+MT29 Psíquico
+MT30 Bola Sombra
+MT31 Lanzallamas
+MT32 Llamarada
+MT33 Gigadrenado
+MT34 Rayo Solar
+MT35 Tumbarocas
+MT36 Avalancha
+MT37 Pulso Umbrío
+MT38 Puyanociva
+MT39 Gigaimpacto
+MT40 Hidropulso
+MT41 Explosión
+MT42 Tijera X
+MT43 Descanso
+MT44 Falsotortazo
+MT45 Daño Secreto
+MT46 Vel. Extrema
+MT47 Torbellino
+MT48 Cascada
+MT49 Ola-Lava
+MT50 Treparrocas
+MT51 Metrónomo
+MT52 Mimético
+MT53 Dulce Aroma
+MT54 Dragoaliento
+MT55 Puño Trueno
+MT56 Puño Fuego
+MT57 Puño Hielo
+MT58 Puño Drenaje
+MT59 Respiro
+MT60 Salmuera
+MT61 Imagen
+MT62 Roca Afilada
+MT63 Energibola
+MT64 Seducción
+MT65 Foco Resp.
+MT66 Intercambio
+MT67 Demolición
+MT68 Contoneo
+MT69 Ladrón
+MT70 Gran Ojo
+MT71 Electrocañón
+MT72 Pantalla Luz
+MT73 Reflejo
+MT74 Levitón
+MT75 Espacio Raro
+MT76 Psicocarga
+MT77 Cargatóxica
+MT78 Antiaéreo
+MT79 Terratemblor
+MT80 Escaldar
+MT81 Ida y vuelta
+MT82 Acróbata
+MT83 Represalia
+MT84 Estoicismo
+MT85 Avivar
+MT86 Cola dragón
+MT87 Alarido
+MT88 Paz Mental
+MT89 Vaho gélido
+MT90 Voltio cruel
+MT91 Ala De Acero
+MT92 Brillo Mágico
+MT93 Hierba Lazo
+MT94 Danza Espada
+MT95 Giro Vil
+MT96 Carantoña
+MT97 Desarme
+MT98 Vendetta
+MT99 Pataleta
+MT100 Fuerza Lunar
+MT101 Puño Sombra
+MT102 Hidrobomba
+MT103 Beso Drenaje
+MT104 Joya De Luz
+MT105 Vendaval
+MT106 Pájaro Osado
+MT107 Truco
+MT108 Triturar
+MT109 Zumbido
+MT110 Megacuerno

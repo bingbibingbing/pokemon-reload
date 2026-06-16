@@ -1,0 +1,399 @@
+Pokémon Reloaded The Last Beta 1.9.1
+*Bugs solucionados y novedades
+ - Añadida Geisha vendedora en Torre Iris, solo aparece si has vencido al menos a una de las bailarinas Eevee.
+ - Mega evolución de Zeraora.
+ - Diversos bugs solucionados.
+
+
+Pokémon Reloaded The Last Beta 1.9
+*Bugs solucionados y novedades
+ - Se ha implementado el Proyecto Stars, con actualización de los Pokémon exclusivos de la región Star.
+ - Se han descubierto dos nuevos Pokémon, la evolución del Onix de Cristal, llamado Cryogelix, y una forma exclusiva de la Región Star de Sudowoodo, de tipo acero y de color dorado.
+ - Se han descubierto además dos nuevas Mega Piedras en la Región Star: Mega Cryogelix, Mega Scyclaw ahora están disponibles.
+ - Se han introducido nuevos ítems: Botas Gruesas, Metrónomo, Hierba Copia, Capa Furtiva, Guante de Boxeo, Supertapones, Espray Bucal, Dado Trucado y Gafa protectora.
+ - Actualizados algunos efectos de sonido.
+ - Mejoras búsqueda en Pokédex.
+ - Actualización del programa de aprendizaje de ataques.
+ - Disponible último pétalo de Alola.
+ - Liga Pokémon de Alola.
+ - Exploración de Isla Espíritu.
+ - Mejoras varias de fondos realistas.
+ - Capturable Zapdos de Galar.
+ - Capturable Solgaleo.
+ - Capturable Stakataka.
+ - Capturable Kartana.
+ - Capturable Necrozma.
+ - Mejoras varias de sprites de combate y añadidos nuevos sprites asimétricos.
+ - Se han corregido muchos errores menores, más detalles e introducido varias mejoras.
+
+
+Pokémon Reloaded The Last Beta 1.8.5
+*Bugs solucionados y novedades
+ - Se han introducido nuevos ítems: Piedra Pre-Evolutiva, Piedra Nivel, Colonia, Super Colonia, Colonia Máxima, Mochi Vigor, Mochi Músculo, Mochi Aguante, Mochi Intelecto, Mochi Mente, Mochi Impetu, Mochi Reinicio, Baya Chilan, Baya Caoca, Baya Pasio, Baya Tamar, Baya Gualot, Baya Alcho, Baya Pomaro, Baya Acardo, Baya Payapa, Baya Kebia, Baya Yecana, Baya Rimoya, Baya Dillo, Baya Bariba, Baya Kouba, Baya Drasi, Baya Anjiro, Baya Hibis, Baya Lagro, Baya Chiri, Baya Jaboca, Baya Magua, Baya Maranga, Baya Biglia y Baya Lupu.
+ - Añadido efecto visual para repelentes y colonias, se puede desactivar en el menú de Opciones.
+ - Se han añadido más zonas de plantaciones en las primeras rutas, en Ciudad Sirio y Pueblo Kena.
+ - Se ha ampliado la Ruta 12 para que todas las nuevas bayas tengan cabida.
+ - Se han corregido muchos errores menores, más detalles e introducido varias mejoras.
+
+
+Pokémon Reloaded The Last Beta 1.8.4
+*Bugs solucionados y novedades
+ - Se han introducido nuevos ítems: Inciensos. Se pueden usar equipados en combate como objetos estratégicos y también equipados en la Guardería para facilitar la crianza.
+ - Arreglados varios entrenadores que se atascan al luchar.
+ - Partidas muy raras en las que no se arregló el problema de los Pokémon Boss.
+ - Para algunos Pokémon, se han hecho ajustes en sus habilidades, como Corsola o algunos Pokémon de Hisui. Realmente no se han quitado habilidades (en algunos casos incluso se han añadido nuevas), pero los cambios realizados podrían afectar a vuestros Pokémon.
+ - Funcionamiento de las bayas que aumentan stats corregido (Bayas Ispero, Meluce, Uvav, Tamate y Mais).
+ - En el Centro comercial ahora se pueden comprar confetis (uno cada día de la semana).
+ - Se han corregido Muchos errores menores, más detalles e introducido varias mejoras.
+
+
+Pokémon Reloaded The Last Beta 1.8.3
+*Bugs solucionados y novedades
+ - Solucionado bug extraño que ocurría en algunas partidas que provocaba que no aparecieran Pokémon Boss en ningún lado.
+ - Errores con los nombres al evolucionar, que no se actualizaban.
+ - Dulce Aroma a veces tenía un comportamiento extraño e inesperado.
+ - Nuevos ítems añadidos: Caramelos Experiencia.
+ - En la Liga Pokémon hay un personaje que nos permitirá fusionar varios caramelos pequeños en grandes.
+ - Para todos los eventos en los que se cuentan los pasos, ahora ya no será suficiente con pulsar una tecla de movimiento. Deberán ser pasos reales para que se tengan en cuenta.
+ - Apertura de huevos ahora se acelerará si nos movemos a más velocidad, es decir, si corremos, usamos bicicleta o Velocidad Extrema.
+ - Revisada generación de intereses del Banco, ya que en muchas partidas no funcionaban correctamente.
+ - Revisada animación de Erico.
+ - Colisiones en ciertos lugares.
+ - Colisiones de las escaleras de los Centros Pokémon.
+ - Revisión de coherencia de eventos en la llegada a la Jungla y secuestro en la Cloaca Polar.
+ - Error extraño de anomalía en La Zona del Frente. Este error ocurría a veces al entrar a otra zona, habiendo ganado previamente en una zona.
+ - Ajustes de fondos realistas y tradicionales.
+ - Nincada ya no podrá evolucionar durante eventos del Frente.
+ - Sprites de combate de Palkia Origen, Druddigon, Golett, Kyurem Blanco, Kyurem Negro, entre otros.
+ - Sprites de menú de todas las formas de Alcremie.
+ - Implementadas habilidades: Transportarrocas y Termoconversión.
+ - Implementado Ataque: Psicorruido.
+ - Cabezazo ahora podrá aumentar la Defensa del usuario un 40% de las veces.
+ - Palafin ahora aprende Viraje al nivel 38 y por DT.
+ - Posibilidad de evolucionar a Ursaring a Ursaluna Carmesí.
+ - Muchos errores menores y más detalles se han corregido.
+
+
+Pokémon Reloaded The Last Beta 1.8.2
+*Bugs solucionados y novedades
+ - Nuevo objeto clave añadido: Amuleto Exp. Este ítem aumentará en un 50% la experiencia recibida en combate solo con tenerlo en la mochila.
+ - Bug en Evento de Reshiram
+ - Bug en Evento del Metalostal en la Ruta 18.
+ - Las misiones de captura de las Islas Cometa no contaban las evoluciones de los Pokémon objetivos como válidas.
+ - Objeto inaccesible en Bosque Mental.
+ - Fondos realistas actualizados.
+ - Algunas mejoras de sprites de Pokémon en combate.
+ - Errores menores.
+
+
+Pokémon Reloaded The Last Beta 1.8.1
+*Bugs solucionados y novedades
+ - Error que detecta partida como corrupta por haber cargado en diferentes versiones de la beta 1.8.1.
+ - Error en Pokémon Race
+ - Error en Evento de Groudon
+ - Error en Evento de Celebi
+ - Error en Evento de Ho-Oh (primer viaje a Islas Solares)
+ - Error de activación de algunos eventos, como llegada del Barco a Puerto Luz y otros del Frente.
+ - Errores en la Zona Safari al encontrar o capturar Pokémon.
+ - Problemas de colisión de la pelota del FlyGol
+ - Consulta en el PC de Fer: ahora sí se puede optar por no leerlo.
+ - Diancie ahora aprende Arenas Ardientes.
+ - Desbloqueo del personaje en animación, cuando el Comandate Tatiano llega para destruir el ultimo Dispositivo.
+ - Error visual con textos de las Cajas Pokémon.
+ - Problemas de cámara en la guarida Magma.
+
+
+Pokémon Reloaded The Last Beta 1.8
+*Bugs solucionados y novedades
+ - Mejorado sistema de partidas guardadas. Se mejoran los tiempos de carga ligeramente.
+ - Avances en las historias de las Islas Cometa: nuevas zonas explorables en Isla Espíritu.
+ - En esta versión todavía no se pueden obtener el último pétalo restante, aunque la última capitana de Alola hace su aparición, preparando el terreno.
+ - En el Valle Espíritu se acaba el contenido de esta beta.
+ - Añadidos nuevos Pokémon de Paldea: Bombirdier, Finizen, Palafin, Varoom, Revavroom, Cyclizar, Frigibax, Arctibax, Baxcalibur, Gimmighoul, Gholdengo, Archaludon, Dipplin, Hydrapple, Poltchageist y Sinistcha.
+ - Nuevos ultraentes capturables: Blacephalon y Guzzlord.
+ - Kubfu capturable.
+ - Ursaluna Luna Carmesí también capturable como Pokémon único.
+ - Añadidas habilidades: Cambio heroico, Ojo Mental, Néctar dulce y Hospitalidad.
+ - Añadidos ataques: Homenaje Póstumo, Quemarrueda, Puño jet, Asalto espadón, Canto encantador, Fiebre dorada, Electrorrayo, Bomba caramelo, Láser veleidoso, Luna roja, Cañón batidor y Bramido dragón.
+ - Se han añadido varios items nuevos al juego, y se plantean varios para futuras versiones. Esto permitirá cubrir las necesidades de Paldea e incluir novedades que tenía pendientes hace tiempo. En total serán 100 nuevas incorporaciones.
+ - La Nerviosfera es una de las novedades, que aumentará las posibilidades de que los Pokémon salvajes llamen a aliados. Podremos lanzarla al enemigo asignándola. También se ha implementado su función como objeto de estrategia: cuando un Pokémon es intimidado, aumenta la velocidad.
+ - Los objetos curativos Rokikos y Corazón Dulce han sido añadidos al Reloaded.
+ - Armadura Auspiciosa y Armadura Maldita también han sido agregadas. Los Charcadet salvajes podrá llevarlos equipados. En esta versión, por tanto, se actualiza la forma de evolucionar a Charcadet. Ahora tendremos que usar estos nuevos objetos, aunque no será necesario equiparlos y subir de nivel, se podrán usar directamente.
+ - Más objetos evolutivos se han añadido: Manzana Melosa, Cuenco Exquisito y Metal Compuesto.
+ - Objetos de estrategia como Amuleto Puro también están disponibles.
+ - Añadidos Pokémon Boss en Cueva Metal (Bisharp).
+ - Solucionado error que ocurría con las flautas de colores al ser usadas. Las flautas especiales ahora pueden usarse en combate. Además pueden asignarse a la letra A, y al igual que la Flauta Pokémon, contarán como objeto usado si no luchamos contra un Pokémon salvaje.
+ - Había un error al tratar de ver la Pokédex desde el menú de Pokémon cuando estabamos viendo los datos de un huevo.
+ - Se incluye en el aprendizaje de Nidoking y Nidoqueen Danza Dragón para hacerlos más temibles.
+ - Arreglada Base secreta inaccesible en Isla Júpiter
+ - Otros errores menores
+
+
+Pokémon Reloaded The Last Beta 1.7.1
+*Bugs solucionados y novedades
+ - Bug con Helia en Ciudad Sirio.
+ - Ajustes en la animación de la Ruta 13 con Giovanni.
+ - Nivel de evolución de Greavard.
+ - Fondos en la Zona Safari.
+ - Pokédex de Arceus tipo hada.
+ - Ajustes colisiones.
+ - Las Bayas que modifican los estados y recuperan salud ahora tendrán el efecto adicional de curar los estados alterados a Pokémon que no afecte el cambio de estado que provocan. Por ejemplo, la baya que congela recuperará el estado paralizado a Pokémon de tipo Hielo o la baya que envenena podrá recuperar a los Pokémon de Acero o Veneno las quemaduras.
+ - Los ataques retardados, como Excavar, seguirán teniendo efecto aunque se realice un cambio de Pokémon.
+
+
+Pokémon Reloaded The Last Beta 1.7
+*Bugs solucionados y novedades
+ - Añadidos nuevos Pokémon de Paldea: Orthworm, Glimmet, Glimmora, Flamigo, Cetoddle, Cetitan, Veluza, Dondozo, Tatsugiri, Greavard y Houndstone.
+ - Añadidas habilidades: General supremo, Capa tóxica, Comandar, Geofagia y Unísono.
+ - Ataques implementados: Oído cocina, Genufendiente, Pirueta helada, Deslome, Giro mortífero y Autotomía.
+ - Solucionados problemas de corrupción JxxE480 y JxxE481 (error ya corregido realmente para la versión 1.6.2.1)
+ - Error con las baldosas giratorias que provocaba bloqueos.
+ - Solucionado problema que ocurría a veces con la evolución de Silcoon.
+ - Solucionado bug que podía ocurrir en la Guarida Aqua al guardar la partida después de hablar con Aquiles.
+ - Los teletransportadores tenían un comportamiento raro.
+ - Electrojaula ahora es un ataque Especial.
+ - Pequeño Bug en los teletransportadores en la misión del Impostor de Ciudad Antares.
+ - Flygol donde la pelota atravesaba las paredes.
+ - Sprite de Dark Tyranitar Shiny causaba Crash.
+ - Al perseguir en el evento de evasión de Rayquaza hace que se salga de los limites del Mapa.
+ - Nuevo Sprite de Particula vital con problemas visuales al abrir el mapa.
+ - Error en el Póker.
+ - Discrepancia entre números en la Dex y datos del Pokémon.
+ - Cryogonal shiny tira error.
+ - Diálogo infinito con Rosama en la misión de Celebi al Pasado.
+ - Shaymin tira Cuadro de texto al iniciar su evento Evasivo.
+ - Lunana en la guardería podía causar corrupción.
+ - Starly le falta su HO.
+ - Zygarde Shiny (cualquiera de sus formas) al criarlo con agrupamiento y bajarle la mitad de la vida va a tirar Crash.
+ - Ornitaro con pequeño bug al registrar solo una de las 2 especies.
+ - Huevo de Meltan en la Pokedex no se muestra como tal.
+ - Iconos de Arceus duende (normal y Shiny)
+ - Iconos de Arctovich Shiny y Alcremie Mezcla Rosa Lazo (normal) en la PC
+ - Bug de los Logros al capturar y no enviar al PC (Confirmaron que fue arreglada para la siguiente versión).
+ - PP en variantes Regionales con distinto PP por Redondeo.
+ - Cálculo del máximo PP erróneo en algunas especies.
+ - RobaSombra no funcionaba como corresponde.
+ - Cherrim Shiny no deja de hacer su sonido fuera de la Pokeball y en combate.
+ - Muñecos de Séptima Gen con errores de descripción.
+ - Mega Kangaskhan al usar excavar tiraba cuadro de error.
+ - Sustituto con Hitbox grande con Xerneas y Yveltal.
+ - Tinkatin, Tinkatuff y Tinkaton no aprendían Danza Espada por MT/DT.
+ - Usuarios Faltantes de Bola de Polen por DT.
+ - Eelektross no aprende carga por DT.
+ - Tauros de Paldea no aprenden Taladradora por DT,
+ - Tauros Variante de fuego no aprende fuego fatuo por DT.
+ - Dusclops y Dusknoir aun no aprenden Pulso Umbrío al nivel 25.
+ - Alcremies Shinys en la Pokedex tira Crash.
+ - Bug Visual al tratar de usar un Caramelo Raro en un Huevo, antes aparecía en rojo a pesar de poder usarse.
+ - Error cuando un Meloetta enemigo usa Cantoarcaico.
+ - Añadidos fondos realistas de Alexis Cáceres, que podrán activarse en opciones de combate pulsando F11. Ahora habrá tres modos: Tradicional, Realista y Simplificado. Éste último es una opción que me gustaría que los usuarios con problemas de rendimiento prueben para ver si les funciona mejor y me cuenten la experiencia.
+ - Añadida opción en Multiplayer para configurar el modo de fondo de combate.
+ - Añadida opción en Multiplayer para configurar el clima del combate y para combatir de noche o de día.
+ - Modificados algunos teletransportadores del gimnasio de Antares para que todas las zonas estén accesibles.
+
+Pokémon Reloaded The Last Beta 1.6.2
+*Bugs solucionados y novedades
+ - Solucionada interacción con el NPC que te entrega Cascada en el Centro Comercial.
+ - Arreglado bug que ocurría en la pantalla de puzles en las Ruinas Omega.
+ - Revisado el movimiento de rocas por el hielo con el uso de Fuerza.
+ - Problemas encontrados en el Cristal Z de fuego.
+ - Fallos aleatorios de cambios de rooms.
+ - Misión de Yveltal actualizada.
+ - Bugs menores.
+
+
+Pokémon Reloaded The Last Beta 1.6.1
+*Bugs solucionados y novedades
+ - Combates contra Serena, Kalm y Alain en las Islas Cometa. Una vez derrotados podrán aparecer como rivales en el Frente.
+ - Yveltal ahora es capturable.
+ - Desde hace años, podemos decirle a un entrenador que deseamos luchar sin objetos, de manera que estableceremos dicha regla para el siguiente combate. Esto puede ser útil para combates contra líderes de Gimnasio, pues a veces abusan de los items curativos. También se puede utilizar contra los miembros del Alto Mando. En esta versión, lo que se ha añadido es una opción para decirle al entrenador que deseamos luchar "con objetos", de manera que podremos cancelar el truco anterior.
+ - Algo que siempre me ha parecido un coñazo de los puzles que requieren Fuerza para avanzar es que, si te despistas, y pones una roca donde no debes, tienes que volver a comenzar la cueva desde cero. Para esta versión, el uso de la habilidad exterior Fuerza se ha mejorado y ahora tendremos más versatilidad a la hora de mover las rocas. Algunos pensarán que, de hecho, la tensión y la precisión requeridas para resolver estos puzles es lo que los hacía más divertidos. El uso de esta mejora es opcional, por supuesto.
+ - Se han solucionado errores bloqueantes que sucedían en varios eventos del juego, como las historias de Giovanni, Celebi, Manaphy y la previa de la Liga Johto.
+ - Solucionado bug del Dojo de Isla Marte.
+ - Solucionados bugs de algunos eventos del Frente que se quedaban bloquedos.
+ - Bugs menores.
+
+
+Pokémon Reloaded The Last Beta 1.6
+*Bugs solucionados y novedades
+ - Al iniciar la partida en esta versión algunas misiones se actualizarán
+ - Podemos obtener cuatro nuevos pétalos de Alola.
+ - Añadidas varias historias en las Islas Cometa.
+ - Añadidos nuevos Pokémon de Paldea al juego: Lechonk, Oinkologne, Tarountula, Spidops, Nymble, Lokix, Pawmi, Pawmo, Pawmot, Tandemaus, Maushold, Fidough, Dachsbun, Smoliv, Dolliv, Arboliva, Squawkabilly, Nacli, Naclstack, Garganacl, Charcadet, Armarouge, Ceruledge, Tadbulb, Bellibolt, Wattrel, Kilowattrel, Maschiff, Mabosstiff, Shroodle, Grafaiai, Bramblin, Tinkatink, Tinkatuff, Tinkaton, Wiglett, Wugtrio, Farigiraf y Dudunsparce.
+ - Añadidas todas las formas alternativas de los Pokémon anteriores.
+ - Añadidas habilidades Olor Persistente, Cola Armadura, Coraza ira.
+ - Una persona en Ciudad Spica nos ayudará a conocer el estado del proceso evolutivo de algunos Pokémon, como es el caso de Pawmo, Basculin o Primeape.
+ - Ahora podremos visitar nuevos lugares en las islas Espíritu y Supernova.
+ - Pokémon legendarios Tapu Bulu, Xerneas y Regieleki son ahora capturables.
+ - Se ha añadido la opción de Multijugador directamente en el menú de inicio, de modo que no sea necesario iniciarlo desde una partida ya existente.
+ - Se ha añadido la opción de establecer el volumen de la música en opciones. La razón por la que no se ha hecho antes es porque el framework de desarrollo tiene limitaciones. De hecho, esta opción no funcionará con la música mp3 o si activamos el modo de compatibilidad de Windows 8.
+ - Una vez activado, ahora Dulce Aroma seguirá activo durante un tiempo, incluso después de que nos aparezcan salvajes o cambiemos de lugar. Si volvemos a seleccionar la opción en el menú de habilidades, podremos desactivarlo. La ventaja de su uso, además de aumentar la posibilidad de encuentro, es que nos aparecerán Pokémon aunque no nos movamos.
+ - En la versión anterior, se modificaron algunos ataques que tenían poder base variable, como Infortunio o Imagen, que duplican su poder bajo ciertas condiciones. Lo que cambió es que el consumo de puntos de poder (PP) se alineaba con el poder base (PB). Estoy de acuerdo en que esta modificación es injusta, ya que estos ataques poseen esa ventaja asociada. Por otro lado, dicha ventaja es quizás demasiado grande. La solución será que cuando el poder base se vea aumentado, el consumo de puntos de poder se calcule haciendo la media entre el poder teórico y el poder real. Por ejemplo, Drakealiento tendrá PB y PP igual a 65 en condiciones normales, pero si el usuario sufre un cambio de estado, tendrá PB igual a 130 y PP igual a 97. Con este cambio algunos ataques se vuelven más interesantes, por ejemplo Puño Furia.
+ - En combate, los tipos de Pokémon quedaban ocultos obligatoriamente para ciertas dificultades, pero ahora, se podrán activar en Opciones a pesar de estar en los modos Difícil o Extremo. En los combates del Frente, sin embargo, se seguirán ocultando siempre, pues se da por hecho que el aspirante los conoce.
+ - Implementados nuevos ataques: Resarcimiento, Telatrampa, Electropalmas, Plegaria vital, Láser Doble y Fuerza Oculta.
+ - El nuevo ataque Fuerza Oculta es exclusivo del Reloaded, y es un ataque físico equivalente a Poder Oculto. El tipo de ambos ataques será el mismo para cada Pokémon individual, y no está ligado a la especie o tipo del Pokémon. Podéis comprar ya mismo la DT de este ataque en la tienda de la Liga Star.
+ - Se ha realizado una limpieza y refactorización de código, para tratar de acelerar los desarrollos presentes y futuros. También se han realizado algunas mejoras, así que podría también ser notorio en el rendimiento del juego. Por otro lado, aunque se ha realizado con cuidado, este tipo de cambios pueden generar bugs en raras ocasiones, así que si encontráis alguna cosa rara, no dudéis en avisar para que sea solucionado.
+ - Se han realizado pequeños balanceos al inicio del juego. Los jugadores que comiencen en nivel de dificultad fácil, ya no encontrarán enemigos con movesets avanzados hasta después del primer gimnasio. Para el resto de niveles de dificultad, tampoco se les asignarán estrategias especiales a los entrenadores antes de la salida de Pueblo Valde. En definitiva, en la Ruta 1 ya no nos encontremos enemigos con Pidgeys que saben Tóxico. Eso será a partir de la Ruta 4 en fácil o a partir de la Ruta 2 en el resto de dificultades.
+ - El primer encuentro con Helia solo tenía lugar una vez habíamos hablado con el Alcalde de Ciudad Sirio. Ahora, este encuentro ocurrirá independientemente de ello, con lo cual, ya no será obligatorio tener que recorrer la Ruta 10 de nuevo para avanzar la historia, solo para los jugadores que se salten este encuentro y vayan primero a Ciudad Sirio.
+ - Añadida nueva velocidad de texto en opciones que permitirá pasar los textos de manera ultra rápida. Su nombre es Instantánea y es una opción que solo se recomienda para los que estén haciendo un speedrun. En cualquier caso, se debe usar con precaución para no perdernos información de interés.
+ - Añadido nuevo objeto clave: un Dron que durante un minuto nos permitirá explorar el lugar. Por el momento no tiene más funcionalidad.
+ - Se ha ampliado el número máximo de Slots de partidas guardadas y se ha optimizado esta vista.
+ - Se han mejorado varios sprites de combate de algunos Pokémon, dotando de asimetría a algunos que no la tenían todavía.
+ - Ahora las cadenas de capturas no se interrumpirán si aparece un shiny de otra especie. Además, nos aparecerá un contador de racha de capturas para facilitar la experiencia.
+*Bugs solucionados
+ - Existía un error en La Zona del Frente en el que si dos o más Pokémon enemigos se debilitaban a la vez, algunos no desaparecían, impidiendo completar las misiones. Esto ya no debería ocurrir.
+ - Había otro error en La Zona relacionado con Sustituto que provocaba el cierre del juego.
+ - Se ha revisado el bug de la Torre que provocaba la aparición de un oponente Nombre -1 o algo así. Comprobar por favor que efectivamente está solucionado.
+ - Debido a un bug que fue detectado, se ha revisado el grabado de discos vírgenes. Este proceso funcionará cuando el ataque utilizado por el Pokémon puede ser aprendido por el mismo. Una excepción será cuando se utilice el ataque Transformación, caso en el que se tendrá en cuenta si el ataque utilizado es compatible con el Pokémon en el que se ha transformado nuestro Pokémon. Otra excepción serán los ataques aprendidos con Esquema, que también podrán ser grabados.
+ - La misión de Zygarde se registrará como completada para los jugadores que la finalizaron, pues en la versión anterior hubo un problema y no se registró correctamente.
+ - Revisión de las misiones de La Torre y La Zona.
+ - En la Zona se ha arreglado la colisión de los ataques con los elementos destructibles. Es cierto que algunos necesitarán dos golpes, atendiendo al tipo o potencia del ataque, pero en ningún caso más de dos.
+ - Actualizados los logros del Hall de Récords del Frente.
+ - Solucionado error que ocurría al comprar una Tienda o un Póster con mensaje para las bases secretas.
+ - Desde la primera versión del juego existe un truco que podemos utilizar pulsando F3 e introduciendo "Inconsciente". A cambio de todo nuestro dinero, nos permitía volver al centro Pokémon automáticamente. Esto estaba pensado para solucionar posibles estados de bloqueo o atascos del personaje, pero como un atajo para teletransportarnos, por eso se penalizaba su uso con perder nuestro dinero. Esto ahora se ha cambiado: si usamos el truco y realmente estamos atascados, ya no perderemos todo nuestro dinero. Es algo que debí programar hace mucho tiempo, os pido disculpas. De todas formas, se han solucionado varios bloqueos y sigo trabajando para que estos atascos no puedan ocurrir en ningún caso.
+ - Solucionado error que provocaba partidas corruptas. Ocurría solo a veces, que tras luchar con Regigigas y posteriormente guardar la partida, se podía quedar corrupta.
+ - Había casos muy raros en los que el personaje se quedaba atorado y no podía moverse. Esto no debería ocurrir ya en ningún caso.
+ - Debido a un error en el código, algunos huevos tardaban en abrirse más de lo debido y otros menos.
+
+
+Pokémon Reloaded The Last Beta 1.5
+*Bugs solucionados y novedades
+ - Añadidos iniciales de Paldea al juego.
+ - Añadidos Wooper de Paldea y su evolución, Clodsire.
+ - Añadidos Tauros de Paldea.
+ - Arreglado problema de imágenes descuadradas de entrenadores con animación en el mensaje de diálogo.
+ - Algunos rivales se vieron afectados por la inserción de los nuevos personajes en la pasada beta 1.4. Quedará solucionado con la actualización a esta versión.
+ - Error que ocurría a veces con el ataque Sustituto cuando era usado por un rival.
+ - Solución del problema con Snorlax para usuarios que ya hablaron con el Anciano. Si guardaste tras la anomalía, no se puede arreglar. Trata de restaurar una partida anterior en la pantalla de carga haciendo clic con botón derecho en el Slot de la partida.
+ - Cuando ocurre una anomalía, no se debe guardar. El propio mensaje de error lo indica, pero como hay usuarios que lo hacen igualmente, a partir de esta versión, el juego no sobrescribirá los archivos de respaldo una vez ocurrida la anomalía, de manera que no se pise la última partida buena.
+ - Solucionado problema con el registro de Megas Shiny en la Pokédex.
+ - Actualizados nombres de ataques a la novena generación, por ejemplo Canto helado ahora se llama Esquirla Helada y Rapidez ahora se llama Meteoros.
+ - Implementados ataques Fría Acogida, Paisaje Nevado y sus aprendizajes.
+ - Implementados ataques Agua fría, Danza acuática, Tajo acuático, Canto ardiente, Truco floral, Patada Hacha, Abrecaminos y Furia Taurina.
+ - Añadido el nuevo clima Nieve, que es algo diferente al ya existente Granizo. Al contrario que en la novena generación, Granizo no se elimina, si no que conviven ambos en el mismo juego.
+ - Ahora algunos climas de la región Star que eran de Granizo serán de Nieve, como por ejemplo Ciudad Deneb.
+ - Implementada nueva habilidad exclusiva del Reloaded: Granizada.
+ - La habilidad Nevada se ha cambiado y ahora producirá el clima Nieve, mientras que la nueva habilidad Granizada producirá el clima Granizo.
+ - Todos los Pokémon que tenían la habilidad Nevada ahora también podrán tener como alternativa Granizada. Notaréis que algunos de los Pokémon que tenéis capturados conservarán su habilidad y otros la cambiarán. En cualquier caso, recordad que existen objetos para cambiar estas habilidades.
+ - La principal diferencia entre Granizo y Nieve es que con Granizo los Pokémon que no son de Hielo van perdiendo salud, sin embargo con Nieve, esta característica se sustituye por que los Pokémon de hielo sufrirán menos daño físico (un 50% menos). Por lo demás son muy similares, en ambas Ventisca no fallará, se puede activar Velo Aurora, etc.
+ - Implementada habilidad Rumia.
+ - Misión de Zygarde ahora es posible completarla.
+ - Revisadas animaciones de Mew, había casos (muy raros) que bloqueaban el juego.
+ - Revisados entrenadores en movimiento que a veces aparecían invisibles al dar el número de teléfono.
+ - En el Palacio del Frente, si no es la primera vez que participamos en el evento, ya no nos especificarán los objetos recibidos uno a uno, si no que nos dirán "has recibido varios ítems".
+ - Solucionado problema con las puertas del Palacio del Frente, que a veces daban problemas para entrar.
+ - Actualizados algunos diálogos de entrenadores en el Palacio que aparecían como "...".
+ - Actualizado funcionamiento del ataque Marcha espectral, que no funcionaba como debía.
+ - Revisado problema que ocurría en la Torre que el juego se congelaba. No debería volver a ocurrir, pero si te pasa, no dudes en contactarme, por favor.
+ - Añadidas Mega Piedras restantes en la Cúpula del Frente.
+ - Añadida nueva DT820 Paisaje Nevado.
+ - Añadida nueva DT330 Patada Ígnea.
+ - Algunos ataques no podían aprenderse por DT, pero el mismo ataque sí se podía aprender por MT.
+ - Mejorado cálculo de aprendizaje por DT.
+ - Al preparar un movimiento Z la música se detenía.
+ - Arceus con la tabla prohibida tenía el tipo hada en lugar del tipo desconocido.
+ - Mil flechas no afectaba a Levitadores y no les quitaba la habilidad.
+ - Drakealiento ahora es un ataque Físico.
+ - Aereopico y Dunetemblor ahora son ataques Especiales.
+ - Revisión de aprendizajes por MT/MO de todos los Pokémon.
+ - Revisión de aprendizajes por tutor de todos los Pokémon.
+ - Revisión de aprendizajes por movimiento huevo de todos los Pokémon.
+ - Revisión de aprendizajes por nivel de los Pokémon.
+ - Problemas de incoherencias temporales o beta obsoleta: Para que se solucione este problema, antes de jugar, ajusta la fecha y hora correctas en tu PC. Y para que no vuelva a ocurrir, debes jugar siempre con la hora correcta.
+ - Modo Daruma de Darmanitan de Galar a veces cambiaba a la forma de Teselia.
+ - Las configuraciones guardadas en el modo Multijugador no pueden ser cargadas en la nueva versión. Con los equipos guardados no habrá problema, así que no os preocupéis, pero si guardasteis una configuración, me temo que tendréis que configurarla de nuevo a mano en TLB 1.5, ya que se usa un sistema antiguo de guardado de partidas, y se ha quedado obsoleto.
+ - Actualizada calidad de algunos gritos Pokémon.
+ - Solucionados posibles bloqueos de partidas en Mundo Inverso y en historias de Teselia.
+ - Solucionados problemas con la Pokédex con Dark Tyranitar, Slowbro y Basculegion.
+ - Arreglos menores.
+
+
+Pokémon Reloaded The Last Beta 1.4
+*Bugs solucionados y novedades
+ - Solucionado problema con el inspector de motes, los Pokémon sin género ya no provocan un error.
+ - Mega evolución de Eevee, ahora compatible con Poder Oculto y Mimético para cambiar a diferentes Eevee-evoluciones.
+ - Combate contra Guzmán, ocurrían cosas raras a veces en la prueba del cristal Z.
+ - También existía un error muy raro de combates repetidos contra algunos entrenadores, debería estar solucionado, pero si vuelve a ocurrir en algún momento, por favor, avisad.
+ - Error extraño que impedía abrir el menú ENTER o las habilidades externas en un momento dado.
+ - Revisado ataque Metrónomo pues fallaba en ocasiones (pocas posibilidades pero ocurría de vez en cuando).
+ - Error que ocurría con algunos Pokémon al usar Sustituto.
+ - Había un problema con la habilidad Agrupamiento de Zygarde que a veces provocaba bugs en los cambios de forma.
+ - Revisado sprite del personaje Javi en todas sus apariciones.
+ - Algunas imágenes de Huevos no se mostraban en el menú de Pokémon.
+ - Ataque Vasta Fuerza arreglado.
+ - Ataque Maldición arreglado para algunos Pokémon no fantasmas que ejecutaban el ataque como si lo fueran.
+ - Añadidos nuevos personajes a la selección de entrenadores. Ahora tenemos 10 principales + 350 adicionales.
+ - Cuando tenías 12 victorias en la Zona Tres, a veces no dejaba participar en la Zona Uno.
+ - El ataque Relevo no copiaba las estadísticas modificadas al Pokémon que entraba. ¡Ya se ha solucionado!
+ - El ataque Relevo, al ser usado por Pokémon con Sustituto, hacía que el juego se colgara o se cerrara, como por ejemplo contra el Líder Antón.
+ - Iconos de objetos erróneos en Multijugador.
+ - Solucionados algunos bloqueos en los que, en un combate doble o triple, un enemigo no sacaba a su siguiente Pokémon.
+ - A veces el lector de Poder Oculto fallaba en su análisis.
+ - Ráfaga Escamas se ha actualizado.
+ - Añadido truco de cambio de nombre del protagonista. Podéis pulsar F3 e introducir "MOTE". Por el momento este cambio no se refleja en los datos de los Pokémon capturados, pero de todas formas no contarán como Pokémon intercambiados al hacer el truco.
+ - Los ataques Vuelo y Bote en combates múltiples a veces no podían finalizarse pulsando la tecla o se quedaban colgados. Ya deberían estar arreglado.
+ - Al derrotar al Snorlax salvaje sin capturarlo e intentar repetir el combate hablando con el Gran Sabio Anciano, se generaba una anomalía en la partida.
+ - El Gran Sabio Anciano tampoco detectaba a algunos iniciales derrotados.
+ - Animación de primer encuentro con Helia revisado.
+ - Revisión de Alto Mando Kalos y Alola. Ya deberían funcionar correctamente en los edificios del Frente.
+ - Mejora de interacción con Kyogre y Groudon al enfrentarlos para capturarlos.
+ - Arreglo de interacción con diarios en el Laboratorio Jungla.
+ - Sinfonía de la diva marina ahora es de tipo Agua.
+ - La habilidad Punk Rock era mostrada como una habilidad de otro Pokémon del equipo en las notificaciones debido a un bug visual.
+ - Si existe un clima específico en una zona y, durante el combate, se detiene por efecto de algún ataque o habilidad, cuando finalicen sus efectos, el clima exterior podrá volver.
+ - Sprite de Galocero hembra centrado en el menú de Pokémon.
+ - Rayquaza no mega evolucionaba.
+ - Había un bug que, aunque ocurría pocas veces, provocaba que los laberintos generados en la Zona tenían lugares inaccesibles o había zonas aisladas que impedían lograr los objetivos. ¡Eso ya no debería ocurrir nunca!
+ - Actualizados algunos sprites de entrenadores.
+ - Arreglos menores.
+
+
+Pokémon Reloaded The Last Beta 1.3
+*Bugs solucionados y novedades
+ - Ahora el entrenador al que le digamos que deseamos luchar sin objetos lo recordará, aunque nos vayamos a otro lugar o guardemos la partida.
+ - Solucionado Softlock en el gimnasio de Ciudad Polar.
+ - Solucionado error de cambio de forma de Castform a tipo Fuego.
+ - Actualización de Pokédex tras agrupar un Zygarde o capturar a Mewtwo.
+ - Ajustes en Pokédex: Cambios de forma permitidos en las búsquedas de Pokémon.
+ - Efectividad de la Ocaso Ball actualizada.
+ - Solucionado error con ataques Estímulo, Bola Voltio y Lanzamiento.
+ - Científico ya no se vuelve invisible ante nuestros ojos.
+ - Fallo ocasional del menú principal.
+ - Los Discos Virgenes desaparecían del PC al ordenar los items.
+ - Error de visualización de items en el PC cuando almacenábamos objetos (solo ocurría en algunos bolsillos).
+ - Flautas Negra y Blanca incluidas en el juego. Algunos Pokémon salvajes las traerán equipadas y permitirán aumentar o reducir los encuentros con enemigos fuera del combate. Sin embargo no serán fáciles de localizar.
+ - Los niveles de los líderes de Gimnasio y Alto Mando ahora se ajustarán al alza si el jugador ha sobreleveado a sus Pokémon.
+ - Evolución de Mr. Mime de Galar corregida.
+ - Algunos detalles menores.
+
+
+Pokémon Reloaded The Last Beta 1.2
+*Bugs solucionados y novedades
+ - Habilidades implementadas: Cortante, Surcavientos.
+ - Actualizadas habilidades de algunos Pokémon.
+ - Solución de sprites de entrenadores bugueados de la versión anterior.
+ - Evolución de Nincada Shiny, ahora Shedinja también será shiny.
+ - Uso de trucos "inconsciente" en el overworld y "me rindo" en combate para posibles softlocks. Advertencia, se pierde el dinero con su uso, así que no lo useis salvo que sea realmente necesario.
+ - Bug que ocurría a veces con el ataque Sonámbulo.
+ - Solucionado problema visual del modal de introducción de números, que entraba en conflicto con las librerías añadidas.
+ - También se ha arreglado el selector de colores, que tenía igualmente errores visuales.
+ - Bug ocurrido al interaccionar con los Huevos en el laboratorio de Elm.
+ - Bug en animación del globo del Team Rocket.
+ - Bug cuando se acaba el tiempo en la zona safari y estamos pescando.
+ - Algunos detalles menores y técnicos.
+
+
+Pokémon Reloaded The Last Beta 1.1
+*Bugs solucionados y novedades
+ - Al seleccionar como rival a Ash con vestuario a rayas, aparecían errores extraños al entrar en el laboratorio de Oak o intentar guardar la partida.
+ - A los usuarios con la fecha incorrecta en el PC se les mostraba un mensaje que les indicaba que la versión era antigua y no podían jugar. Ahora, se os mostrará el mensaje de fecha incorrecta que corresponde, pero para poder jugar, tendréis que poner la hora correcta en el equipo.
+ - Algunos personajes seleccionados con el truco (Control+P) podían dar problemas de partidas corruptas. Es algo que sospechabais muchos, y os confirmo que era un bug que ocurría en ciertos casos. ¡Pero ya se ha resuelto el tema para esta versión!
+ - En la navegación de la Pokédex aparecían errores raros cuando nos desplazábamos hacia abajo.
+ - Al lanzar bayas en la Zona Safari podían aparecer errores inesperados.
+ - Al ser derrotados en el enfrentamiento contra el Team Rocket en Ciudad Naos, no era posible volver a luchar con ellos, con lo cual la Guardería quedaba inaccesible.
+ - El log de combate a veces daba errores de escritura, así que en esta versión se ha desactivado por defecto. Se trata de un archivo que se genera junto al ejecutable que transcribe todos los combates que tienen lugar en el juego. Lo podéis volver a activar/desactivar pulsando F3 e introduciendo "logbattle", pero bajo vuestro propio riesgo.
+ - Ajustado crecimiento de Basculegion, que no estaba sincronizado con el de Basculin y provocaba que se mostraran valores de experiencias raros.
+
+
+Pokémon Reloaded The Last Beta 1.0
+** Versión inicial **

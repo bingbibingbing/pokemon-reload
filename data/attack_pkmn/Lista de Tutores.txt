@@ -1,0 +1,100 @@
+TM01 Planta Feroz
+TM02 Anillo Ígneo
+TM03 Hidrocañón
+TM04 Voto Agua
+TM05 Voto Fuego
+TM06 Voto Planta
+TM07 Cometa Draco
+TM08 Enfado
+TM09 Comesueños
+TM10 Viento Hielo
+TM11 Mega Puño
+TM12 Mega Patada
+TM13 Contraataque
+TM14 Aguante
+TM15 Fuego Fatuo
+TM16 Rapidez
+TM17 Tierra Viva
+TM18 Doble Rayo
+TM19 Mov. Sísmico
+TM20 Garra Umbría
+TM21 Onda Vacío
+TM22 Fuerza Bruta
+TM23 Recurrente
+TM24 Cabezazo Zen
+TM25 Nitrocarga
+TM26 Antojo
+TM27 Bilis
+TM28 Bloqueo
+TM29 Gravedad
+TM30 Ronquido
+TM31 Sonámbulo
+TM32 Telequinesis 
+TM33 Defensa Ferrea
+TM34 Capa Mágica
+TM35 Golpe Mordaza
+TM36 Hidroariete
+TM37 Patada Baja
+TM38 Electrotela
+TM39 Refuerzo
+TM40 Picadura
+TM41 Adaptación
+TM42 Poder Pasado
+TM43 Canon
+TM44 Ciclón
+TM45 Autosugestión
+TM46 Puntapié
+TM47 Bote
+TM48 Acua Cola
+TM49 Bomba Germen
+TM50 Cabezahierro
+TM51 Super diente
+TM52 Cascabel cura
+TM53 Última baza
+TM54 Taladradora
+TM55 Juego sucio
+TM56 Onda Ignea
+TM57 Onda Tóxica
+TM58 Ataque Aéreo
+TM59 Divide Dolor
+TM60 Esfuerzo
+TM61 Rugido
+TM62 Plancha
+TM63 Caída libre
+TM64 Lanza Mugre
+TM65 Acoso
+TM66 Puño Incremento
+TM67 Chupa Vidas
+TM68 Alud
+TM69 Vozarrón
+TM70 Cuerno Certero
+TM71 Aura Magnética
+TM72 Velo Aurora
+TM73 Celebración
+TM74 Manos Juntas
+TM75 Paga Extra
+TM76 Corpulencia
+TM77 Pulimento
+TM78 Frustración
+TM79 Retribución
+TM80 Cero Absoluto
+TM81 Liofilización
+TM82 Colmillo Ígneo
+TM83 Colmillo Rayo
+TM84 Colmillo Hielo
+TM85 Psicocolmillo
+TM86 Hoja Aguda
+TM87 Cuchilla Solar
+TM88 A Bocajarro
+TM89 Bola Voltio
+TM90 Veneno X
+TM91 Fuerza Equina
+TM92 Sofoco
+TM93 Esfera Aural
+TM94 Lariat Oscuro
+TM95 Triataque
+TM96 Danza Dragón
+TM97 Campo De Hierba
+TM98 Campo Eléctrico
+TM99 Campo Psíquico
+TM100 Campo De Niebla

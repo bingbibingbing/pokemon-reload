@@ -1,0 +1,7 @@
+Información sobre los equipos
+-----------------------------
+En el segundo piso de todos los Centros Pokémon puedes guardar equipos de seis Pokémon en archivos. Se almacenarán incluso los objetos que llevan equipados.
+
+Los equipos que guardes, podrán ser usados en el modo Multijugador, también accesible en el segundo piso de los Centros Pokémon. 
+
+Lo más interesante de todo esto es que puedes llevarte tus mejores equipos a casa de tus amigos y enfrentarte con ellos en un mismo PC.

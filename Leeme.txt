@@ -1,0 +1,167 @@
+** Pokémon Reloaded The Last Beta 1.9.1 **
+• Solución de Bugs y mejoras.
+• Nuevas Mega: Zeraora. 
+
+
+** Pokémon Reloaded The Last Beta 1.9 **
+• Solución de Bugs y mejoras.
+• Proyecto Stars: Se mejoran diversos aspectos técnicos de los Pokémon exclusivos de la Región Star.
+• Disponible último pétalo de Alola.
+• Liga Pokémon de Alola.
+• Exploración de Isla Espíritu.
+• Añadidos Cryogelix y Sudowoodo Dorado.
+• Añadidas 2 Megas exclusivas: Scyclaw y Cryogelix.
+• Añadidos nuevos ítems: Botas Gruesas, Metrónomo, Hierba Copia, Capa Furtiva, Guante de Boxeo, Supertapones, Espray Bucal, Dado Trucado y Gafa protectora.
+• Nuevas Megas: Clefairy, Victreebel, Starmie, Dragonite, Skarmory, Chimeco, Chandelure, Pyroar, Hawlucha, Scrafty y Malamar.
+• Nuevos Ultraentes y Legendarios capturables.
+
+
+** Pokémon Reloaded The Last Beta 1.8.5 **
+• Solución de Bugs y mejoras.
+• Añadidos nuevos ítems: Colonias, Mochis, 25 nuevas Bayas, Piedra Pre-Evolutiva y Piedra Nivel.
+
+
+** Pokémon Reloaded The Last Beta 1.8.4 **
+• Solución de Bugs y mejoras.
+• Añadidos nuevos ítems: Inciensos.
+
+
+** Pokémon Reloaded The Last Beta 1.8.3 **
+• Solución de Bugs.
+• Añadidos nuevos ítems: Caramelos Exp.
+
+
+** Pokémon Reloaded The Last Beta 1.8.2 **
+• Solución de Bugs.
+• Añadido nuevo ítem: Amuleto Exp.
+
+
+** Pokémon Reloaded The Last Beta 1.8.1 **
+• Solución de Bugs.
+
+
+** Pokémon Reloaded The Last Beta 1.8 **
+• Solución de Bugs.
+• Añadidos nuevos Pokémon de Paldea: Bombirdier, Finizen, Palafin, Varoom, Revavroom, Cyclizar, Frigibax, Arctibax, Baxcalibur, Gimmighoul, Gholdengo, Archaludon, Dipplin, Hydrapple, Poltchageist y Sinistcha.
+• Añadidas nuevas habilidades y ataques de Paldea para cubrir a los Pokémon anteriores.
+• Añadidos nuevos items.
+• Nuevos Ultraentes capturables.
+• Más lugares de las Islas Cometa por explorar.
+• Y otros muchos detalles.
+
+
+** Pokémon Reloaded The Last Beta 1.7.1 **
+• Solución de Bugs.
+
+
+** Pokémon Reloaded The Last Beta 1.7 **
+• Solución de un montón de Bugs.
+• Añadidos nuevos Pokémon de Paldea: Orthworm, Glimmet, Glimmora, Flamigo, Cetoddle, Cetitan, Veluza, Dondozo, Tatsugiri, Greavard y Houndstone.
+• Añadidas nuevas habilidades y ataques de Paldea para cubrir a los Pokémon anteriores.
+
+
+** Pokémon Reloaded The Last Beta 1.6.2 **
+• Solución de Bugs.
+
+
+** Pokémon Reloaded The Last Beta 1.6.1 **
+• Solución de Bugs.
+• Añadido Kingambit.
+• Nuevo Pokémon legendario capturable.
+
+
+** Pokémon Reloaded The Last Beta 1.6 **
+• Solución de Bugs
+• Nuevos Pokémon, Ataques y Habilidades de Paldea
+• Disponibles hasta 6 Pétalos de Alola
+• Implementación de nuevas historias
+• Objeto clave Dron, en Ciudad Antares
+• Nuevos Pokémon legendarios capturables
+• Más lugares de las Islas Cometa por explorar
+• Mejora de Dulce Aroma
+• Mejora de las cadenas de captura
+• Y otros muchos detalles.
+
+
+** Pokémon Reloaded The Last Beta 1.5 **
+• Solución de Bugs
+• Nuevos Pokémon de Paldea: Iniciales, Wooper de Paldea, Clodsire, Tauros de Paldea.
+• Ataques nuevos implementados: Paisaje Nevado, Canto Ardiente, Truco Floral, Agua Fría, Tajo Acuático, Danza Acuática, Patada Hacha, Furia Taurina, Abrecaminos.
+• Añadidas Mega Piedras Raichita y Eeveita en la Cúpula del Frente.
+• Añadidas nuevas DTs: DT820 Paisaje Nevado y DT834 Abrecaminos.
+• Añadido nuevo clima: Nieve.
+• Implementada nueva habilidad exclusiva del Reloaded: Granizada.
+• Revisión integral de aprendizajes de ataques por MOs, MTs, Tutores, DTs, Movimientos huevo y nivel.
+
+
+** Pokémon Reloaded The Last Beta 1.4 **
+• Solución de Bugs
+• Añadido truco de cambio de nombre del protagonista. Podéis pulsar F3 e introducir "MOTE".
+• Añadidos nuevos personajes a la selección de entrenadores. Ahora tenemos 10 principales + 350 adicionales
+
+
+** Pokémon Reloaded The Last Beta 1.3 **
+• Solución de Bugs
+• Flautas Negra y Blanca incluidas en el juego.
+
+
+** Pokémon Reloaded The Last Beta 1.2 **
+• Solución de Bugs
+• Habilidades Cortante y Surcavientos
+
+
+** Pokémon Reloaded The Last Beta 1.1 **
+• Solución de Bugs
+• Novedades y mejoras: Nada nuevo con respecto a la versión anterior.
+
+
+** Pokémon Reloaded The Last Beta 1.0 **
+• Alcance de esta versión
+ - Podréis completar prácticamente la totalidad de la Pokédex de las ocho primeras generaciones, a excepción de algunos Pokémon legendarios y singulares. De la novena generación únicamente hay un Pokémon por el momento.
+ - Podréis obtener todas las medallas de las regiones de Star, Kanto, Johto, Hoenn, Sinnoh, Teselia y Kalos, y ganar sus ligas Pokémon correspondientes.
+ - Obtener todas las mega piedras y acceder a la mecánica de la Mega Evolución.
+ - Obtener la mayoría de los cristales Z y acceder a la mecánica de los movimientos Z.
+ - Podréis visitar los 4 mapas del juego, incluyendo todas islas del último mapa: Las Islas Cometa.
+ - Podréis participar y obtener los símbolos de Plata y de Oro de seis edificios del Frente de Batalla, y abrir las puertas de la cueva retaguardia, donde hay escondidos algunos Pokémon legendarios inéditos.
+
+• Lo que viene
+Como ya os he comentado, el juego no está finalizado al cien por cien. Para versiones futuras, se añadirán:
+ - Historias pendientes de implementar en las Islas Cometa.
+ - Exploración de las Islas Cometa al completo.
+ - Resto de enfrentamientos contra los capitanes y Liga Pokémon de Alola.
+ - Acceso al edificio Infierno del Frente de Batalla y a los eventos correspondientes.
+ - Historias finales del Frente de Batalla.
+ - Mecánica Dinamax y Gigamax.
+ - Nuevos Pokémon, ataques y habilidades de Paldea serán añadidos.
+
+• Consejos
+Os dejo varios consejos y trucos para que aprovechéis todas las posiciones que ofrece el juego.
+
+Selección de personajes
+Los personajes principales que podemos seleccionar siguen siendo los mismos de siempre: Ash, Gary, Oro, Cristal, Aura, Bruno, Maya, Leon, Kate y Mark. Éstos dos últimos son los personajes exclusivos del Reloaded. Con las flechas arriba y abajo puedes cambiar entre los diferentes vestuarios que poseen, y que podremos cambiar siempre que queramos en el armario de nuestro dormitorio.
+La opción de seleccionar personajes ocultos pulsando Control + P sigue disponible, aunque lo recomendable es utilizar un personaje principal, ya que tienen sprites de bicicleta y pesca personalizados y no hay posibilidad de encontrarnos con nuestro hermano gemelo en el juego.
+De todas formas no hay ninguna limitación para que seleccionéis uno de los 345 personajes disponibles. Si siempre has querido jugar como un Cazabichos o un Domadragones, no seré yo quien ponga trabas a tus sueños.
+
+Iniciales
+Los Pokémon iniciales siguen siendo Pikachu, Riolu e Eevee. Sin embargo, si deseáis que el Profesor Oak os ofrezca otras opciones, solo tenéis que incluir el nombre de una región (escrita correctamente) en vuestra frase personal, en la que se introduce al iniciar la partida.
+Por el momento, los Pokémon de Paldea no están incluidos en el juego, se añadirán para versiones posteriores. Los iniciales ocultos y exclusivos de la Región Star aparecerán si incluyes la palabra Star en tu frase personal.
+
+Primera ruta
+Atención a la primera ruta, pues conecta con el Lago Senn. En esta versión podréis encontrar diferentes Pokémon salvajes en la ruta y en el lago, así que echadle un ojo. Recordad que pulsando la tecla L podéis ver los Pokémon que aparecen en cada lugar.
+
+Inicial de la Ruta 2
+Al inicio de la partida, también se nos preguntan varias cuestiones. Las respuestas que seleccionemos no son algo arbitrario, ya que el primer Pokémon inicial en estado salvaje que encontraremos dependerá de ello. Por ejemplo, si deseamos que en la Ruta 2 nos aparezca un Charmander, solo tenemos que indicar que nos gusta el calor y nos identificamos con la palabra Nostalgia.
+
+Modos de dificultad
+Ahora por defecto se presentan más opciones de dificultad. Este modo determinará cuanto daño se realiza al enemigo y cuanto daño recibiremos. Recordad que el modo Fácil es un tutorial que solo está disponible hasta ganar la primera medalla y no es permanente. Recomendable siempre el modo de dificultad Normal
+Y si quieres jugar rápido, el modo extremo podría ofrecerte lo que andas buscando, aunque también será más sencillo caer derrotado.
+
+Opciones
+No dudéis en explorar las nuevas opciones que se han añadido (pulsando F11) y que os permitirán customizar vuestras partidas y adaptarlo todo a vuestro gusto.
+
+Comandos
+Desde opciones, o pulsando el número 0, podréis modificar los comandos del juego a vuestro gusto. También podéis intentar usar algún programa para mapear botones del teclado a un mando/joystick. 
+En esta versión, sobre todo a nivel overworld, el menú principal que aparece al pulsar Enter os permitirá abrir cualquier opción, así que el número necesario de botones necesarios para acceder a todos los comandos se ha reducido bastante.
+
+Gestos y diálogos
+Existen cuatro opciones que tienen poca utilidad, pero podéis trastear con ellas por curiosidad. Con la tecla E puedes seleccionar un gesto por defecto y con la tecla R mostrar dicha exclamación. Con la tecla Y puedes decir tu frase personal y con la tecla T puedes escribir un texto para que tú personaje hable. Truco: Si antes de retar a un entrenador, te aproximas y le dices que quieres luchar "sin objetos", se establecerá esta regla y ninguno podrá recuperar a sus Pokémon durante el combate.

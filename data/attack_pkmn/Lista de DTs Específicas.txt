@@ -1,0 +1,173 @@
+14 Giro Fuego
+39 Remolino
+56 Golpe Cuerpo
+58 Derribo
+60 Doble Filo
+75 Psicorrayo
+76 Rayo Aurora
+80 Sumisión
+87 Drenadoras
+99 Hipnosis
+101 Agilidad
+104 Tinieblas
+106 Chirrido
+108 Recuperación
+112 Rayo confuso
+114 Rizo Defensa
+119 Foco energía
+120 Venganza
+127 Residuos
+148 Puño Mareo
+170 Fotosíntesis
+174 Viento Afín
+183 Relevo
+188 Palmeo
+190 Inversión
+191 Cara susto
+199 Tajo Aéreo
+202 Envite ígneo
+203 Giro Rápido
+215 Persecución
+225 Pesadilla
+228 Maldición
+233 Rencor
+236 Finta
+240 Bofetón Lodo
+242 Púas
+244 Mismo Destino
+251 Garra Metal
+253 Encanto
+254 Rodar
+258 Corte Furia
+267 Divide Dolor
+273 Otra Vez
+276 Sol Matinal
+275 Tiro Vital
+277 Luz Lunar
+284 Premonición
+288 Alboroto
+289 Reserva
+290 Escupir
+291 Tragar
+297 Puño Certero
+301 Carga
+302 Mofa
+304 Imitación
+310 Reciclaje
+311 Desquite
+317 Sellar
+328 Danza pluma
+330 Patada Ígnea
+332 Bola Hielo
+340 Meteorobola
+342 Llanto Falso
+347 Eco metálico
+350 Masa Cósmica
+356 Bucle Arena
+358 Agua Lodosa
+361 Carámbano
+366 Disparo lodo
+367 Cola veneno
+369 Hoja Mágica
+374 Pedrada
+382 Giro bola
+388 Represión Metal
+393 Lanzamiento
+403 Castigo
+405 Púas Tóxicas
+415 Carga Dragón
+425 Maquinación
+426 Puño Bala
+430 Bomba Fango
+431 Psicocorte
+433 Disparo Espejo
+439 Lluevehojas 
+440 Latigazo
+447 Trampa Rocas
+451 Rayo Carga
+457 Testarazo
+466 Viento Aciago
+475 Concha Filo
+479 Afilagarras
+482 Infortunio
+495 Infierno
+496 Electrotela
+501 Poder reserva
+502 Golpe Calor
+505 Voltiocambio
+511 Llave Giro
+527 Cuerpo Pesado
+531 Bomba ácida
+536 Eco voz
+537 Niebla Clara
+538 Chuzos
+558 Rizo Algodón
+571 Carga Parábola
+572 Llama Embrujada
+573 Voz Cautivadora
+580 Red Viscosa
+582 Golpe Fantasma
+589 Onda Anómala
+594 Halloween
+632 Bola de polen
+697 Plancha Corporal
+705 Vasto Impacto
+712 Gota Vital
+717 Metaláser
+718 Allanador férreo
+720 Viraje
+721 Golpe rastrero
+723 Ráfaga escamas
+724 Alto voltaje
+727 Poltergeist
+728 Envidia ardiente
+731 Triple axel
+732 Motivación
+734 Pulso de campo
+736 Fitoimpulso
+738 Vasta fuerza
+739 Rayo meteórico
+742 Arenas ardientes
+743 Gas corrosivo
+745 Ala bis
+747 Pikaturbo
+748 Pikapicado
+749 Salpikasurf
+750 Pikatormenta
+751 Eevimpacto
+752 Vapodrenaje
+753 Joltioparálisis
+754 Flarembestida
+755 Umbreozona
+756 Espeaura
+757 Leafitobombas
+758 Glaceoprisma
+759 Sylveotornado
+760 Eevatadura
+761 Phantoexplosión
+762 Drakealiento
+763 Rockeocatapulta
+764 Aereopico
+765 Lephisusto
+766 Dunetemblor
+767 Bandeogolpe
+768 Lireapestoso
+769 Titangarra
+770 Aurafuerza
+771 Auraenergía
+782 Cambiapoder
+790 Desahogo
+800 Agua fría
+806 Brinco
+820 Paisaje Nevado
+821 Pirueta helada
+833 Teraexplosión
+834 Abrecaminos
+849 Fuerza Oculta
+850 Plancha Voltáica
+851 Palma Rauda
+852 Prensa metálica
+854 Bramido dragón
+857 Cólera ardiente
+859 Canto Encantador
+863 Psicorruido
