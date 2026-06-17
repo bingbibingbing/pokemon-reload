@@ -6,6 +6,7 @@ from tools.poke_gm80 import (
     extract_encrypted_game_blob,
     encrypt_game_blob,
     load_game,
+    patch_script_batch,
     patch_script_source,
     patch_script_source_replace,
 )
@@ -90,6 +91,22 @@ class Gm80ResourceTests(unittest.TestCase):
         script = game.get_script(9928)
         self.assertEqual(script.name, "TextMenu")
         self.assertEqual(script.source, new_source)
+
+    def test_patch_script_batch_updates_multiple_scripts_in_one_pass(self) -> None:
+        raw = GAME_EXE.read_bytes()
+        patched = patch_script_batch(
+            raw,
+            source_updates={9928: "return 7; "},
+            replace_updates={9942: [("txt_final", "txt_ready")]},
+        )
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            patched_exe = Path(temp_dir) / GAME_EXE.name
+            patched_exe.write_bytes(patched)
+            game = load_game(patched_exe)
+
+        self.assertEqual(game.get_script(9928).source, "return 7; ")
+        self.assertIn("var f, i, txt, txt_ready", game.get_script(9942).source)
 
     def test_patch_dialog_bitmap_runtime_updates_text_reader_cache(self) -> None:
         raw = GAME_EXE.read_bytes()

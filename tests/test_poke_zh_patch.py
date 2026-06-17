@@ -237,23 +237,27 @@ class ZhPatchSourceTests(unittest.TestCase):
         source = (ROOT / "tools" / "poke_zh_patch.py").read_text(encoding="utf-8")
         self.assertIn('draw_set_font((3)); for(i=0;i<=3;i+=1){ ex(6901,281,30+i*16,"PP",0,(13160656),1);}', source)
 
-    def test_patch_uifix_incremental_runtime_updates_existing_zh_uifix_exe(self) -> None:
+    def test_patch_uifix_incremental_runtime_includes_version_bypass_and_save_isolation(self) -> None:
+        source = (ROOT / "tools" / "poke_zh_patch.py").read_text(encoding="utf-8")
+        self.assertIn('STARTUP_VALIDATION_BYPASS_SOURCE = "return 1; "', source)
+        self.assertIn(r'SAVE_ISOLATION_NEW_PREFIX = r"data\partidas\reloaded_zhcn_"', source)
+        self.assertIn("patched = _apply_startup_and_save_isolation_patches(patched)", source)
+
+    def test_committed_zh_uifix_exe_includes_incremental_runtime_patches(self) -> None:
         source_exe = ROOT / "Proyecto Reloaded The Last Beta 1.9.1 Full.zh-cn.uifix.exe"
-        raw = source_exe.read_bytes()
+        game = load_game(source_exe)
 
-        patched = patch_uifix_incremental_runtime(raw)
-
-        with TemporaryDirectory() as temp_dir:
-            patched_exe = Path(temp_dir) / source_exe.name
-            patched_exe.write_bytes(patched)
-            game = load_game(patched_exe)
-
+        self.assertEqual(game.get_script(10054).source, "return 1; ")
         self.assertIn("global.zh_menu_0", game.get_script(7038).source)
         self.assertIn('pair_key="zh__custom__pair_dash";', game.get_script(5211).source)
         self.assertIn('ex(7028,buffer[0],80,268+movimiento,(13160656),fa_left,ALPHA*movimiento/16);', game.get_script(7089).source)
         self.assertIn('ex(7028,line_text,view_xview+112,line_y,c_white,fa_left,0.9);', game.get_script(7013).source)
         self.assertIn('ex(7028,line_text,view_xview+464,line_y,c_white,fa_right,0.9);', game.get_script(7014).source)
         self.assertIn('draw_set_font((3)); for(i=0;i<=3;i+=1){ ex(6901,281,30+i*16,"PP",0,(13160656),1);}', game.get_script(7077).source)
+        for script_index in (7477, 7657, 7680, 7759, 7981, 7993, 8008, 8243, 8613, 9200, 9201, 9440, 9624, 9777, 9779):
+            self.assertIn('data\\partidas\\reloaded_zhcn_', game.get_script(script_index).source)
+        self.assertIn('if(fileVersion>global.currentVersion){ex(8521,1);exit;}', game.get_script(8244).source)
+        self.assertIn('if(global.currentVersion>ex(7584,(0))){ ex(9744,ex(9928,2101));game_restart();exit;}', game.get_script(7759).source)
 
 
 if __name__ == "__main__":

@@ -673,6 +673,51 @@ def patch_script_source_replace(raw: bytes, script_index: int, old: str, new: st
     )
 
 
+def patch_script_batch(
+    raw: bytes,
+    *,
+    source_updates: dict[int, str] | None = None,
+    replace_updates: dict[int, list[tuple[str, str]]] | None = None,
+    ignore_missing_replacements: bool = False,
+) -> bytes:
+    source_updates = source_updates or {}
+    replace_updates = replace_updates or {}
+
+    if not source_updates and not replace_updates:
+        return raw
+
+    blob = extract_encrypted_game_blob(raw)
+    section = _read_script_section(blob.decrypted_data)
+
+    rebuilt_entries: list[bytes] = []
+    for index, entry in enumerate(section.entries):
+        if index in source_updates:
+            entry = _patch_compressed_script_source(entry, source_updates[index])
+
+        for old, new in replace_updates.get(index, []):
+            try:
+                entry = _patch_compressed_script_source_replace(entry, old, new)
+            except ValueError:
+                if not ignore_missing_replacements:
+                    raise
+
+        rebuilt_entries.append(struct.pack("<I", len(entry)) + entry)
+
+    patched_decrypted = (
+        blob.decrypted_data[: section.entries_offset]
+        + b"".join(rebuilt_entries)
+        + blob.decrypted_data[section.section_end :]
+    )
+    patched_encrypted = encrypt_game_blob(patched_decrypted, blob.forward_table)
+
+    return (
+        raw[: blob.length_offset]
+        + struct.pack("<I", len(patched_encrypted))
+        + patched_encrypted
+        + raw[blob.data_offset + len(blob.encrypted_data) :]
+    )
+
+
 def load_game(exe_path: Path) -> GameResources:
     raw = exe_path.read_bytes()
     if struct.unpack_from("<I", raw, GM80_DATA_OFFSET)[0] != GMK_MAGIC:

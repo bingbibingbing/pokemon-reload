@@ -4,9 +4,9 @@ from pathlib import Path
 import argparse
 
 try:
-    from tools.poke_gm80 import patch_script_source, patch_script_source_replace
+    from tools.poke_gm80 import patch_script_batch, patch_script_source, patch_script_source_replace
 except ModuleNotFoundError:
-    from poke_gm80 import patch_script_source, patch_script_source_replace
+    from poke_gm80 import patch_script_batch, patch_script_source, patch_script_source_replace
 
 
 DRAW_GRAFITI_EXT_SOURCE = (
@@ -426,6 +426,27 @@ DRAW_PANEL_INFORMATIVO_SOURCE = (
     "ex(7028,spr1,80,282,(13160656),fa_left,ALPHA); "
     "ex(7028,spr2,80,298,(13160656),fa_left,ALPHA); "
     "} draw_set_alpha(1); "
+)
+
+STARTUP_VALIDATION_BYPASS_SOURCE = "return 1; "
+SAVE_ISOLATION_OLD_PREFIX = r"data\partidas\reloaded"
+SAVE_ISOLATION_NEW_PREFIX = r"data\partidas\reloaded_zhcn_"
+SAVE_ISOLATION_SCRIPT_IDS = (
+    7477,
+    7657,
+    7680,
+    7759,
+    7981,
+    7993,
+    8008,
+    8243,
+    8613,
+    9200,
+    9201,
+    9440,
+    9624,
+    9777,
+    9779,
 )
 
 
@@ -1533,12 +1554,27 @@ def patch_dialog_bitmap_runtime(raw: bytes) -> bytes:
         'ex(7028,ex(8488,(1099).ObItem[i]),134,10+16*j,COLOR,fa_left,1);',
     )
 
+    patched = _apply_startup_and_save_isolation_patches(patched)
+
     return patched
+
+
+def _apply_startup_and_save_isolation_patches(raw: bytes) -> bytes:
+    return patch_script_batch(
+        raw,
+        source_updates={10054: STARTUP_VALIDATION_BYPASS_SOURCE},
+        replace_updates={
+            script_index: [(SAVE_ISOLATION_OLD_PREFIX, SAVE_ISOLATION_NEW_PREFIX)]
+            for script_index in SAVE_ISOLATION_SCRIPT_IDS
+        },
+        ignore_missing_replacements=True,
+    )
 
 
 def patch_uifix_incremental_runtime(raw: bytes) -> bytes:
     patched = raw
 
+    patched = _apply_startup_and_save_isolation_patches(patched)
     patched = patch_script_source(patched, 7038, DRAW_INICIO_CONTROL_SOURCE)
     patched = patch_script_source(patched, 5211, ADD_TEXT_TO_BUFFER_SOURCE)
     patched = patch_script_source(patched, 7089, DRAW_PANEL_INFORMATIVO_SOURCE)
