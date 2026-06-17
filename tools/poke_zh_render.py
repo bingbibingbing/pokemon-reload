@@ -102,7 +102,7 @@ def render_manifest(
             entry["text"],
             output_path,
             font_path=font_path,
-            font_size=font_size,
+            font_size=int(entry.get("font_size", font_size)),
             line_spacing=line_spacing,
         )
         rendered.append((key, size))

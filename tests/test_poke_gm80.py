@@ -162,6 +162,14 @@ class Gm80ResourceTests(unittest.TestCase):
         self.assertIn("draw_sprite_ext(spr,0,drawX,Y,1,1,0,col,alpha);", draw_grafiti_ext.source)
         self.assertIn('if(global.language="zh"){ global.drawModalText=argument0; ex(9774,global.vel_text); }', dialogo.source)
         self.assertIn("ex(7028,global.drawModalText,view_xview+15,view_yview+142,global.colordialogo,fa_left,1);", modal_base.source)
+        self.assertIn(
+            "ex(7028,global.drawModalText,view_xview+122+offX,view_yview+global.drawModalOffset+offY,ex(5971,global.cuadrodialogo),fa_center,1);",
+            modal_base.source,
+        )
+        self.assertIn(
+            "ex(7028,global.drawModalText,view_xview+122+offX,view_yview+descPosY+offY,ex(5973,global.cuadrodialogo),fa_center,1);",
+            modal_base.source,
+        )
         self.assertIn('if(global.language="zh" && global.zh_text_key_map!=(-1) && ds_map_exists(global.zh_text_key_map,argument2)){', draw_text_shadow.source)
         self.assertIn('ex(7028,argument2,argument0,argument1,argument3,fa_left,1);', draw_text_shadow.source)
 

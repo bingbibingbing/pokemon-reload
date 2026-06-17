@@ -27,6 +27,7 @@ except ModuleNotFoundError:
 
 
 PLACEHOLDER_RE = re.compile(r"\$[A-Za-z0-9]+\$")
+TEMPLATE_TOKEN_RE = re.compile(r"(\$par1\$|\$par2\$|\$par3\$|#)")
 MEGA_STONE_REMAINDERS = {
     "ite",
     "nite",
@@ -68,6 +69,7 @@ PACK_WRAP_WIDTHS: dict[str, int | None] = {
     "dex_info": 290,
 }
 EXTRA_PACK_NAMES = ("dex_espec", "dex_info")
+COMPACT_NUMERIC_FONT_SIZE = 12
 RAW_KEY_LABELS = (
     tuple(chr(code) for code in range(ord("A"), ord("Z") + 1))
     + tuple(str(number) for number in range(10))
@@ -75,27 +77,103 @@ RAW_KEY_LABELS = (
 )
 KEY_NAME_LINE_NUMBERS = tuple(range(1545, 1609))
 KEY_TEMPLATE_LINES = {
-    683: "{par1} - 页面",
-    684: "{par1} - 叫声",
-    685: "{par1} - 退出",
-    686: "{par1} - 帮助",
+    683: "{par1}翻页",
+    684: "{par1}叫声",
+    685: "{par1}退出",
+    686: "{par1}帮助",
     702: "可查看闪光形态（{par1}）",
     703: "普通形态（{par1}）",
+    832: "按{par1}分配这个树果。",
+    833: "按{par1}使用。",
 }
-RAW_NUMBER_TEMPLATE_LINES = {
-    699: "第{par1}页",
-}
+RAW_NUMBER_TEMPLATE_SPECS = (
+    ("txt_menu", 699, tuple(str(number) for number in range(1, 21)), "第{par1}页", None),
+    ("txt_menu", 549, tuple(str(number) for number in range(0, 301)) + ("--",), "威:{par1}", COMPACT_NUMERIC_FONT_SIZE),
+    ("txt_menu", 550, tuple(str(number) for number in range(0, 301)) + ("--",), "PP:{par1}", COMPACT_NUMERIC_FONT_SIZE),
+)
 PACK_TEMPLATE_SPECS = (
     ("txt_menu", 698, "dex_espec", "{par1}宝可梦"),
-    ("txt_menu", 705, "txt_pkmn", "{par1}的一般能力值。"),
-    ("txt_menu", 707, "txt_pkmn", "{par1}升级可学会的招式。"),
+    ("txt_menu", 215, "txt_pkmn", "{par1}的数据已更新。"),
+    ("txt_menu", 705, "txt_pkmn", "{par1}的基础数据"),
+    ("txt_menu", 707, "txt_pkmn", "{par1}的升级招式"),
+    ("txt_menu", 1542, "txt_attack", "进化：{par1}"),
+    ("txt_menu", 795, "txt_pkmn", "离开 - {par1}"),
+    ("txt_menu", 821, "txt_pkmn", "资料 - {par1}"),
     ("txt_dialog", 2639, "txt_pkmn", "你获得了{par1}。"),
     ("txt_dialog", 2639, "txt_obj", "你获得了{par1}。"),
+    ("txt_dialog", 4501, "txt_obj", "你找到了{par1}。"),
+    ("txt_dialog", 6834, "txt_pkmn", "这只宝可梦是{par1}。"),
+    ("txt_dialog", 6837, "txt_pkmn", "你获得了{par1}。"),
+    ("txt_dialog", 6837, "txt_obj", "你获得了{par1}。"),
+)
+PACK_PAGE_TEMPLATE_SPECS = (
+    (
+        "txt_dialog",
+        6838,
+        "txt_pkmn",
+        (
+            "{par1}……",
+            "不错的选择！",
+        ),
+    ),
+)
+LABEL_PAIR_TEMPLATE_SPECS = (
+    (
+        "txt_dialog",
+        1499,
+        "你好，训练家。#按{par1}可以查看宝可梦资料。#按{par2}可以把它从精灵球里放出来。",
+    ),
+    (
+        "txt_dialog",
+        1513,
+        "对战开始时，首位宝可梦会上场。#按{par1}选择首位宝可梦，选中后按{par2}确认。",
+    ),
+)
+LABEL_PAGE_TEMPLATE_SPECS = (
+    (
+        "txt_dialog",
+        2561,
+        (
+            "你好，训练家！我们一直在等你。",
+            "昨天我给了你训练家手册，希望你已经认真看过了。",
+            "按{par1}就能查看它。",
+        ),
+    ),
+)
+LABEL_PAIR_PAGE_TEMPLATE_SPECS = (
+    (
+        "txt_dialog",
+        6841,
+        (
+            "随身带上一些总是很重要。",
+            "有了它们，你就能捕捉野生宝可梦。",
+            "对战中，按{par1}就能把它们投出去。",
+            "抓到宝可梦后，按{par2}就能在图鉴里查看信息。",
+        ),
+    ),
+)
+RAW_LABEL_TEMPLATE_SPECS = (
+    ("txt_obj_desc", 170, "地图。#按{par1}使用。"),
+)
+NICKNAME_GENDER_LINE_NUMBERS = (224, 226)
+BALL_PROMPT_DESC_LINES = tuple(range(178, 271))
+PAGE_TEMPLATE_SPECS = (
+    ("txt_dialog", 6841, 3, "par1", "对战时，按{label}投出它们。"),
+    ("txt_dialog", 6841, 4, "par2", "如果你捕捉到宝可梦，按{label}打开图鉴查看信息。"),
 )
 DYNAMIC_BITMAP_TEXTS = [
     (f"zh__txt_dialog__5__slot__{slot}", f"已分配槽位 {slot}#按 Z 继续。")
     for slot in range(1, 100)
 ]
+CUSTOM_LAYOUT_SPECS = (
+    (
+        "zh__custom__pair_dash",
+        "w0|par1|seg1|par2",
+        (
+            ("seg__1", " - "),
+        ),
+    ),
+)
 SOURCE_OVERRIDES = {
     "New game": "新游戏",
     "ZH LOAD": "读取存档",
@@ -107,6 +185,7 @@ SOURCE_OVERRIDES = {
     "Hello, $prota$!": "你好，训练家！",
     "For example, these Pokémon are $par1$, $par2$ and $par3$.": "例如，这些宝可梦是伊布、皮卡丘和利欧路。",
     "Hello, $prota$!@How are you with the Pokédex?@Pokémon Seen... $par1$.@Pokémon Caught... $par2$.": "你好，训练家！#你的图鉴进展如何？#已见到的宝可梦。#已捕获的宝可梦。",
+    "$par1$'s mom": "$par1$的妈妈",
     "Yes (&Z)": "是（Z）",
     "No (&X)": "否（X）",
     "OK (&Z)": "确定（Z）",
@@ -120,6 +199,64 @@ SOURCE_OVERRIDES = {
     "Turn off Game Music?": "关闭游戏音乐？",
     "Turn on Game Music?": "开启游戏音乐？",
     "Not available.": "不可用。",
+    "INFO.": "信息",
+    "AREA": "地区",
+    "EVOL.": "进化",
+    "MOV.": "招式",
+    "STATS": "能力",
+    "ADD.": "附加",
+    "Pokémon Info.": "宝可梦资料",
+    "Pokémon Abil.": "宝可梦特性",
+    "Battle Moves": "战斗招式",
+    "Mouse": "鼠",
+    "Key Items": "重要道具",
+    "Level": "等级",
+    "Lv $par1$": "等级$par1$",
+    "A map. Press $par1$ to use it.": "地图。#按$par1$使用。",
+    "A cellphone. Press $par1$ to use it.": "手机。#按$par1$使用。",
+    "A rod used for fishing Pokémon. Press $par1$ to use it.": "用于钓宝可梦的钓竿。#按$par1$使用。",
+    "A better rod used for fishing Pokémon. Press $par1$ to use it.": "更好的钓竿，可用来钓宝可梦。#按$par1$使用。",
+    "The best rod used for fishing Pokémon. Press $par1$ to use it.": "最好的钓竿，可用来钓宝可梦。#按$par1$使用。",
+    "Ride it to go even faster than with your Running Shoes. Press $par1$ to use it.": "骑上它会比跑鞋更快。#按$par1$使用。",
+    "It lets you listen to the Star Region's music. Press $par1$ to use it.": "它能播放星区的音乐。#按$par1$使用。",
+    "A flute that awakens sleeping Pokémon. Press $par1$ to use it during a battle.": "能唤醒睡眠宝可梦的笛子。#对战中按$par1$使用。",
+    "Restores PP in battle. Press $par1$ to assign.": "对战中恢复PP。#按$par1$分配。",
+    "Boosts Attack in battle. Press $par1$ to assign.": "对战中提升攻击。#按$par1$分配。",
+    "Boosts Defense in battle. Press $par1$ to assign.": "对战中提升防御。#按$par1$分配。",
+    "Remember, you can use the Phone by pressing $par1$!": "记住，按$par1$就能使用手机！",
+    "$par1$ used $par2$.": "$par1$使用了$par2$。",
+    "$par1$ has hit $par2$.": "$par1$击中了$par2$。",
+    "Do you want to throw $par1$ to $par2$?#You have $par3$ units left.": "要对$par2$投出$par1$吗？#你还剩$par3$个。",
+    "Do you want to throw $par1$ to $par2$?#You have one unit left.": "要对$par2$投出$par1$吗？#你还剩1个。",
+    "#$par1$ Pokémon's number: $par2$.": "#$par1$的宝可梦数量：$par2$。",
+    "#Health percentage: $par1$%": "#体力百分比：$par1$%",
+    "#Pokémon with status condition: $par1$": "#处于异常状态的宝可梦：$par1$",
+    "#Opponent Pokémon's number: $par1$": "#对手的宝可梦数量：$par1$",
+    "Press $par1$ to assign this berry.": "按$par1$分配这个树果。",
+    "Press $par1$ to use it.": "按$par1$使用。",
+    "BP: $par1$": "威:$par1$",
+    "PP: $par1$": "PP:$par1$",
+    "Evol: $par1$": "进化：$par1$",
+    " (Male)": "（雄性）",
+    " (Female)": "（雌性）",
+    "Type A": "属性1",
+    "Type B": "属性2",
+    "Stats": "能力",
+    "ATTACK": "攻击",
+    "DEFENSE": "防御",
+    "SP. AT.": "特攻",
+    "SP. DEF.": "特防",
+    "SPEED": "速度",
+    "Experience": "经验",
+    "Exp. Points": "经验值",
+    "Next Lv": "下一级",
+    "Exp.": "经验",
+    "Stats detail": "能力详情",
+    "Instruction Values": "努力值",
+    "Natural Talents Values": "个体值",
+    "HP:#PP:#Attack:#Defense:#Special At.:#Special Def.:#Speed:#Total:": "HP:#PP:#攻击:#防御:#特攻:#特防:#速度:#总量:",
+    "HP:#Attack:#Defense:#Special At.:#Special Def.:#Speed:#Total:": "HP:#攻击:#防御:#特攻:#特防:#速度:#总量:",
+    "Health points (HP):#Attack:#Defense:#Spec. Atk.:#Spec. Def.:#Speed:": "HP值:#攻击:#防御:#特攻:#特防:#速度:",
     "Time: ": "时间：",
     "Physical": "物理",
     "Special": "特殊",
@@ -185,6 +322,16 @@ NAME_PLACEHOLDER_REPLACEMENTS = {
     "$prota$": "the trainer",
     "$rival$": "the rival",
 }
+PARAM_PLACEHOLDER_TOKENS = {
+    "$par1$": "ZZHPAR1TOKENZZ",
+    "$par2$": "ZZHPAR2TOKENZZ",
+    "$par3$": "ZZHPAR3TOKENZZ",
+}
+PARAM_PLACEHOLDER_NAMES = {
+    "$par1$": "par1",
+    "$par2$": "par2",
+    "$par3$": "par3",
+}
 
 
 def is_static_renderable(text: str) -> bool:
@@ -206,6 +353,25 @@ def _static_translation_source(text: str) -> str | None:
             normalized = normalized.replace(token, replacement)
         return re.sub(r"\s{2,}", " ", normalized).strip()
     return None
+
+
+def _template_translation_source(text: str) -> str | None:
+    if not text.strip():
+        return None
+    placeholders = set(PLACEHOLDER_RE.findall(text))
+    if not placeholders or not placeholders <= set(PARAM_PLACEHOLDER_TOKENS):
+        return None
+    normalized = text
+    for placeholder, token in PARAM_PLACEHOLDER_TOKENS.items():
+        normalized = normalized.replace(placeholder, token)
+    return normalized
+
+
+def _restore_template_placeholders(text: str) -> str:
+    restored = text
+    for placeholder, token in PARAM_PLACEHOLDER_TOKENS.items():
+        restored = restored.replace(token, placeholder)
+    return restored
 
 
 def make_page_key(folder: str, filename: str, line_number: int, page_number: int) -> str:
@@ -613,18 +779,96 @@ def _translate_name_pack_line(
     return None
 
 
-def _dynamic_key_entry(folder: str, filename: str, line: int, key: str, text: str) -> dict[str, str | int]:
-    return {
+def _dynamic_key_entry(
+    folder: str,
+    filename: str,
+    line: int,
+    key: str,
+    text: str,
+    *,
+    font_size: int | None = None,
+) -> dict[str, str | int]:
+    entry: dict[str, str | int] = {
         "folder": folder,
         "filename": filename,
         "line": line,
         "key": key,
         "text": text,
     }
+    if font_size is not None:
+        entry["font_size"] = font_size
+    return entry
 
 
-def _build_key_label_entries(translated_pack_lines: dict[str, list[str]]) -> list[dict[str, str | int]]:
+def build_dynamic_layout_assets(
+    folder: str,
+    source_pack_lines: dict[str, list[str]],
+    translate_template: Callable[[str, str], str | None],
+) -> tuple[list[dict[str, str | int]], dict[str, str]]:
     entries: list[dict[str, str | int]] = []
+    layouts: dict[str, str] = {}
+
+    for filename, lines in source_pack_lines.items():
+        wrap_width = PACK_WRAP_WIDTHS.get(filename, 290) or 0
+        for line_number, line in enumerate(lines, start=1):
+            pages = line.split("@")
+            for page_number, page_text in enumerate(pages, start=1):
+                if _template_translation_source(page_text) is None:
+                    continue
+                translated = translate_template(filename, page_text)
+                if not translated:
+                    continue
+                parts = [part for part in TEMPLATE_TOKEN_RE.split(translated) if part]
+                if not any(part in PARAM_PLACEHOLDER_NAMES for part in parts):
+                    continue
+
+                base_key = (
+                    make_page_key(folder, filename, line_number, page_number)
+                    if len(pages) > 1
+                    else make_line_key(folder, filename, line_number)
+                )
+                layout_tokens = [f"w{wrap_width}"]
+                segment_index = 0
+
+                for part in parts:
+                    if part == "#":
+                        layout_tokens.append("br")
+                        continue
+                    if part in PARAM_PLACEHOLDER_NAMES:
+                        layout_tokens.append(PARAM_PLACEHOLDER_NAMES[part])
+                        continue
+                    if not part:
+                        continue
+                    segment_index += 1
+                    segment_key = f"{base_key}__seg__{segment_index}"
+                    entries.append(_dynamic_key_entry(folder, filename, line_number, segment_key, part))
+                    layout_tokens.append(f"seg{segment_index}")
+
+                layouts[base_key] = "|".join(layout_tokens)
+
+    for base_key, layout, segments in CUSTOM_LAYOUT_SPECS:
+        layouts[base_key] = layout
+        for segment_name, segment_text in segments:
+            entries.append(
+                _dynamic_key_entry(
+                    folder,
+                    "txt_battle",
+                    0,
+                    f"{base_key}__{segment_name}",
+                    segment_text,
+                )
+            )
+
+    return entries, layouts
+
+
+def write_dynamic_layout_files(layouts: dict[str, str], output_dir: Path) -> None:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    for key, layout in layouts.items():
+        (output_dir / f"{key}__layout.txt").write_text(layout, encoding="ascii")
+
+
+def _build_label_sources(translated_pack_lines: dict[str, list[str]]) -> list[tuple[str, str]]:
     menu_lines = translated_pack_lines.get("txt_menu", [])
     label_sources: list[tuple[str, str]] = [(raw_label, raw_label) for raw_label in RAW_KEY_LABELS]
 
@@ -633,6 +877,12 @@ def _build_key_label_entries(translated_pack_lines: dict[str, list[str]]) -> lis
             label = menu_lines[line_number - 1].strip()
             if label:
                 label_sources.append((label, make_line_key("zh", "txt_menu", line_number)))
+    return label_sources
+
+
+def _build_key_label_entries(translated_pack_lines: dict[str, list[str]]) -> list[dict[str, str | int]]:
+    entries: list[dict[str, str | int]] = []
+    label_sources = _build_label_sources(translated_pack_lines)
 
     for line_number, template in KEY_TEMPLATE_LINES.items():
         base_key = make_line_key("zh", "txt_menu", line_number)
@@ -643,15 +893,83 @@ def _build_key_label_entries(translated_pack_lines: dict[str, list[str]]) -> lis
                 key = f"{base_key}__par1__{label_key}"
             entries.append(_dynamic_key_entry("zh", "txt_menu", line_number, key, template.format(par1=label)))
 
-    for line_number, template in RAW_NUMBER_TEMPLATE_LINES.items():
-        for number in range(1, 21):
+    for filename, line_number, values, template, entry_font_size in RAW_NUMBER_TEMPLATE_SPECS:
+        for value in values:
+            entries.append(
+                _dynamic_key_entry(
+                    "zh",
+                    filename,
+                    line_number,
+                    f"{make_line_key('zh', filename, line_number)}__par1raw__{value}",
+                    template.format(par1=value),
+                    font_size=entry_font_size,
+                )
+            )
+
+    for filename, line_number, template in RAW_LABEL_TEMPLATE_SPECS:
+        base_key = make_line_key("zh", filename, line_number)
+        for label, label_key in label_sources:
+            if label_key == label:
+                key = f"{base_key}__par1raw__{label}"
+            else:
+                key = f"{base_key}__par1__{label_key}"
+            entries.append(_dynamic_key_entry("zh", filename, line_number, key, template.format(par1=label)))
+
+    return entries
+
+
+def _build_ball_prompt_entries(
+    translated_pack_lines: dict[str, list[str]],
+    *,
+    font_path: Path | None = None,
+    font_size: int = DEFAULT_FONT_SIZE,
+) -> list[dict[str, str | int]]:
+    entries: list[dict[str, str | int]] = []
+    label_sources = _build_label_sources(translated_pack_lines)
+    desc_lines = translated_pack_lines.get("txt_obj_desc", [])
+    use_base_key = make_line_key("zh", "txt_menu", 831)
+    assign_base_key = make_line_key("zh", "txt_menu", 1178)
+
+    for line_number in BALL_PROMPT_DESC_LINES:
+        if not (0 < line_number <= len(desc_lines)):
+            continue
+        desc_text = desc_lines[line_number - 1].strip()
+        if not desc_text:
+            continue
+        desc_key = make_line_key("zh", "txt_obj_desc", line_number)
+        for label, label_key in label_sources:
+            if label_key == label:
+                param2_suffix = f"__par2raw__{label}"
+            else:
+                param2_suffix = f"__par2__{label_key}"
+            use_text = wrap_text_to_width(
+                f"{desc_text}#按{label}使用。",
+                302,
+                font_path=font_path,
+                font_size=font_size,
+            )
+            assign_text = wrap_text_to_width(
+                f"{desc_text}#按{label}分配这个道具。",
+                222,
+                font_path=font_path,
+                font_size=font_size,
+            )
             entries.append(
                 _dynamic_key_entry(
                     "zh",
                     "txt_menu",
-                    line_number,
-                    f"{make_line_key('zh', 'txt_menu', line_number)}__par1raw__{number}",
-                    template.format(par1=number),
+                    831,
+                    f"{use_base_key}__par1__{desc_key}{param2_suffix}",
+                    use_text,
+                )
+            )
+            entries.append(
+                _dynamic_key_entry(
+                    "zh",
+                    "txt_menu",
+                    1178,
+                    f"{assign_base_key}{param2_suffix}__par1__{desc_key}",
+                    assign_text,
                 )
             )
 
@@ -678,7 +996,195 @@ def _build_pack_template_entries(translated_pack_lines: dict[str, list[str]]) ->
     return entries
 
 
-def build_dynamic_manifest_entries(translated_pack_lines: dict[str, list[str]]) -> list[dict[str, str | int]]:
+def _build_pack_page_template_entries(translated_pack_lines: dict[str, list[str]]) -> list[dict[str, str | int]]:
+    entries: list[dict[str, str | int]] = []
+    for filename, line_number, param_pack, page_templates in PACK_PAGE_TEMPLATE_SPECS:
+        base_key = make_line_key("zh", filename, line_number)
+        source_lines = translated_pack_lines.get(param_pack, [])
+        for param_line, param_text in enumerate(source_lines, start=1):
+            if not param_text.strip():
+                continue
+            key_base = f"{base_key}__par1__{make_line_key('zh', param_pack, param_line)}"
+            for page_number, template in enumerate(page_templates, start=1):
+                entries.append(
+                    _dynamic_key_entry(
+                        "zh",
+                        filename,
+                        line_number,
+                        f"{key_base}__page__{page_number}",
+                        template.format(par1=param_text),
+                    )
+                )
+    return entries
+
+
+def _param_suffix(param_name: str, label: str, label_key: str) -> str:
+    if label_key == label:
+        return f"__{param_name}raw__{label}"
+    return f"__{param_name}__{label_key}"
+
+
+def _build_label_pair_template_entries(translated_pack_lines: dict[str, list[str]]) -> list[dict[str, str | int]]:
+    entries: list[dict[str, str | int]] = []
+    label_sources = _build_label_sources(translated_pack_lines)
+    for filename, line_number, template in LABEL_PAIR_TEMPLATE_SPECS:
+        base_key = make_line_key("zh", filename, line_number)
+        for par1_label, par1_key in label_sources:
+            par1_suffix = _param_suffix("par1", par1_label, par1_key)
+            for par2_label, par2_key in label_sources:
+                key = f"{base_key}{par1_suffix}{_param_suffix('par2', par2_label, par2_key)}"
+                entries.append(
+                    _dynamic_key_entry(
+                        "zh",
+                        filename,
+                        line_number,
+                        key,
+                        template.format(par1=par1_label, par2=par2_label),
+                    )
+                )
+    return entries
+
+
+def _build_label_page_template_entries(translated_pack_lines: dict[str, list[str]]) -> list[dict[str, str | int]]:
+    entries: list[dict[str, str | int]] = []
+    label_sources = _build_label_sources(translated_pack_lines)
+    for filename, line_number, page_templates in LABEL_PAGE_TEMPLATE_SPECS:
+        base_key = make_line_key("zh", filename, line_number)
+        for par1_label, par1_key in label_sources:
+            key_base = f"{base_key}{_param_suffix('par1', par1_label, par1_key)}"
+            for page_number, template in enumerate(page_templates, start=1):
+                entries.append(
+                    _dynamic_key_entry(
+                        "zh",
+                        filename,
+                        line_number,
+                        f"{key_base}__page__{page_number}",
+                        template.format(par1=par1_label),
+                    )
+                )
+    return entries
+
+
+def _build_label_pair_page_template_entries(translated_pack_lines: dict[str, list[str]]) -> list[dict[str, str | int]]:
+    entries: list[dict[str, str | int]] = []
+    label_sources = _build_label_sources(translated_pack_lines)
+    for filename, line_number, page_templates in LABEL_PAIR_PAGE_TEMPLATE_SPECS:
+        base_key = make_line_key("zh", filename, line_number)
+        for par1_label, par1_key in label_sources:
+            par1_suffix = _param_suffix("par1", par1_label, par1_key)
+            for par2_label, par2_key in label_sources:
+                key_base = f"{base_key}{par1_suffix}{_param_suffix('par2', par2_label, par2_key)}"
+                for page_number, template in enumerate(page_templates, start=1):
+                    entries.append(
+                        _dynamic_key_entry(
+                            "zh",
+                            filename,
+                            line_number,
+                            f"{key_base}__page__{page_number}",
+                            template.format(par1=par1_label, par2=par2_label),
+                        )
+                    )
+    return entries
+
+
+def _build_nickname_prompt_entries(translated_pack_lines: dict[str, list[str]]) -> list[dict[str, str | int]]:
+    entries: list[dict[str, str | int]] = []
+    base_key = make_line_key("zh", "txt_menu", 220)
+    pokemon_lines = translated_pack_lines.get("txt_pkmn", [])
+    menu_lines = translated_pack_lines.get("txt_menu", [])
+    gender_sources: list[tuple[str, str]] = []
+    for line_number in NICKNAME_GENDER_LINE_NUMBERS:
+        if 0 < line_number <= len(menu_lines):
+            gender_text = menu_lines[line_number - 1].strip()
+            if gender_text:
+                gender_sources.append((gender_text, make_line_key("zh", "txt_menu", line_number)))
+
+    for pokemon_line, pokemon_name in enumerate(pokemon_lines, start=1):
+        if not pokemon_name.strip():
+            continue
+        pokemon_key = make_line_key("zh", "txt_pkmn", pokemon_line)
+        for gender_text, gender_key in gender_sources:
+            key = f"{base_key}__par1__{pokemon_key}__par2__{gender_key}"
+            entries.append(
+                _dynamic_key_entry(
+                    "zh",
+                    "txt_menu",
+                    220,
+                    key,
+                    f"要给{pokemon_name}{gender_text}取昵称吗？",
+                )
+            )
+    return entries
+
+
+def _build_page_template_entries(translated_pack_lines: dict[str, list[str]]) -> list[dict[str, str | int]]:
+    entries: list[dict[str, str | int]] = []
+    label_sources = _build_label_sources(translated_pack_lines)
+
+    for filename, line_number, page_number, param_name, template in PAGE_TEMPLATE_SPECS:
+        base_key = f"{make_line_key('zh', filename, line_number)}__page__{page_number}"
+        for label, label_key in label_sources:
+            if label_key == label:
+                key = f"{base_key}__{param_name}raw__{label}"
+            else:
+                key = f"{base_key}__{param_name}__{label_key}"
+            entries.append(_dynamic_key_entry("zh", filename, line_number, key, template.format(label=label)))
+
+    return entries
+
+
+def _split_dex_info_pages(text: str) -> list[str]:
+    if text.count("#") < 3:
+        return [text]
+
+    split_pos = -1
+    line_breaks = 0
+    for index, char in enumerate(text):
+        if char == "#":
+            line_breaks += 1
+            if line_breaks == 3:
+                split_pos = index
+                break
+
+    if split_pos == -1:
+        return [text]
+
+    first_page = text[:split_pos]
+    second_page = text[split_pos + 1 :]
+    return [page for page in (first_page, second_page) if page]
+
+
+def _build_dex_info_page_entries(
+    translated_pack_lines: dict[str, list[str]],
+    *,
+    font_path: Path | None = None,
+    font_size: int = DEFAULT_FONT_SIZE,
+) -> list[dict[str, str | int]]:
+    entries: list[dict[str, str | int]] = []
+    wrap_width = PACK_WRAP_WIDTHS["dex_info"]
+    for line_number, text in enumerate(translated_pack_lines.get("dex_info", []), start=1):
+        if not text.strip():
+            continue
+        wrapped_text = wrap_text_to_width(text, wrap_width, font_path=font_path, font_size=font_size) if wrap_width else text
+        for page_number, page_text in enumerate(_split_dex_info_pages(wrapped_text), start=1):
+            entries.append(
+                _dynamic_key_entry(
+                    "zh",
+                    "dex_info",
+                    line_number,
+                    f"{make_line_key('zh', 'dex_info', line_number)}__page__{page_number}",
+                    page_text,
+                )
+            )
+    return entries
+
+
+def build_dynamic_manifest_entries(
+    translated_pack_lines: dict[str, list[str]],
+    *,
+    font_path: Path | None = None,
+    font_size: int = DEFAULT_FONT_SIZE,
+) -> list[dict[str, str | int]]:
     entries = [
         _dynamic_key_entry(
             "zh",
@@ -690,7 +1196,15 @@ def build_dynamic_manifest_entries(translated_pack_lines: dict[str, list[str]]) 
         for slot in range(1, 100)
     ]
     entries.extend(_build_key_label_entries(translated_pack_lines))
+    entries.extend(_build_ball_prompt_entries(translated_pack_lines, font_path=font_path, font_size=font_size))
+    entries.extend(_build_dex_info_page_entries(translated_pack_lines, font_path=font_path, font_size=font_size))
     entries.extend(_build_pack_template_entries(translated_pack_lines))
+    entries.extend(_build_pack_page_template_entries(translated_pack_lines))
+    entries.extend(_build_label_pair_template_entries(translated_pack_lines))
+    entries.extend(_build_label_page_template_entries(translated_pack_lines))
+    entries.extend(_build_label_pair_page_template_entries(translated_pack_lines))
+    entries.extend(_build_nickname_prompt_entries(translated_pack_lines))
+    entries.extend(_build_page_template_entries(translated_pack_lines))
     return entries
 
 
@@ -699,10 +1213,12 @@ def build_render_manifest(
     manifest_path: Path,
     cache_dir: Path,
     *,
+    layout_dir: Path | None = None,
     font_path: Path | None = None,
     font_size: int = DEFAULT_FONT_SIZE,
 ) -> list[dict[str, str | int]]:
     text_root = root / "data" / "text" / "en"
+    layout_dir = layout_dir or (root / "data" / "text" / "zh" / "render")
     pokeapi_cache_dir = cache_dir / "pokeapi"
     google_cache_path = cache_dir / "google_static_cache.json"
 
@@ -734,17 +1250,38 @@ def build_render_manifest(
                     translated = _translate_name_pack_line(filename, page_text, species_map, move_map, ability_map, item_map)
                     if translated is None and page_text not in SOURCE_OVERRIDES:
                         generic_texts.append(page_translation_source)
+                    template_translation_source = _template_translation_source(page_text)
+                    if template_translation_source is not None and page_text not in SOURCE_OVERRIDES:
+                        generic_texts.append(template_translation_source)
             translation_source = _static_translation_source(line)
             if translation_source is None:
+                template_translation_source = _template_translation_source(line)
+                if template_translation_source is not None and line not in SOURCE_OVERRIDES:
+                    generic_texts.append(template_translation_source)
                 continue
             translated = _translate_name_pack_line(filename, line, species_map, move_map, ability_map, item_map)
             if translated is None and line not in SOURCE_OVERRIDES:
                 generic_texts.append(translation_source)
+            template_translation_source = _template_translation_source(line)
+            if template_translation_source is not None and line not in SOURCE_OVERRIDES:
+                generic_texts.append(template_translation_source)
 
     google_lookup = _translate_texts_with_cache(generic_texts, google_cache_path, glossary)
 
     manifest_entries: list[dict[str, str | int]] = []
     translated_pack_lines: dict[str, list[str]] = {}
+
+    def translate_template_line(filename: str, text: str) -> str | None:
+        if text in SOURCE_OVERRIDES:
+            return SOURCE_OVERRIDES[text]
+        template_source = _template_translation_source(text)
+        if template_source is None:
+            return None
+        translated = google_lookup.get(template_source)
+        if translated is None:
+            return None
+        return _restore_template_placeholders(translated)
+
     for filename, lines in decoded_pack_lines.items():
         wrap_width = PACK_WRAP_WIDTHS.get(filename, 290)
 
@@ -786,9 +1323,18 @@ def build_render_manifest(
             )
         )
 
-    manifest_entries.extend(build_dynamic_manifest_entries(translated_pack_lines))
+    manifest_entries.extend(
+        build_dynamic_manifest_entries(
+            translated_pack_lines,
+            font_path=font_path,
+            font_size=font_size,
+        )
+    )
+    layout_entries, layouts = build_dynamic_layout_assets("zh", decoded_pack_lines, translate_template_line)
+    manifest_entries.extend(layout_entries)
     manifest_entries.sort(key=lambda entry: (entry["filename"], int(entry["line"]), str(entry.get("key", ""))))
     _write_json(manifest_path, manifest_entries)
+    write_dynamic_layout_files(layouts, layout_dir)
     return manifest_entries
 
 
@@ -808,7 +1354,7 @@ def render_manifest_parallel(
             str(entry["text"]),
             output_dir / f"{key}.png",
             font_path=font_path,
-            font_size=font_size,
+            font_size=int(entry.get("font_size", font_size)),
         )
 
     with ThreadPoolExecutor(max_workers=max(workers, 1)) as executor:
@@ -847,6 +1393,7 @@ def main() -> int:
             root,
             manifest_path,
             cache_dir,
+            layout_dir=render_dir,
             font_path=args.font_path,
             font_size=args.font_size,
         )

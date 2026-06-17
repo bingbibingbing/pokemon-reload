@@ -1,0 +1,1 @@
+w290|seg1|br|seg2|par1|br|seg3|par2|br|seg4|par3|br|seg5
